@@ -12,6 +12,3 @@
 
 ## About Us Page
 ![Alt text](readme_assets/About.png?raw=true "Mutualism Contact Us page")
-
-
-## Components to work on
