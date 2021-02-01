@@ -13,19 +13,21 @@
 ## To Do List
 - [x] About Mutualism Investments 
 - [ ] Analysis and Background 
-- [ ] Class Diagram
+- [ ] UML Class Diagram
 - [ ] Use Case Sets 
 - [ ] Entity Relational Diagram (ERD)
-- [ ] Data Dictinary Extract
-
+- [ ] Data Dictinary Extracts
 ## Analysis and Background
 
-## Class Diagram
+## UML Class Diagram
+A unified modeling language (UML) is static diagram that describes the structure of a system by showing the systems: classes, attributes, operations and the relationships among objects.
 
 ## Use Case Sets
+Use cases are sets of actions, services, and functions that the system needs to perform. A use case set for a system is a tabular representation of the relationship between the user and the different use cases in which the user is involved, it also shows the relationships that the use cases have with each other. 
 
 ## Entity Relational Diagram (ERD)
+The entity relational diagram (ERD) shows a graphical presentation of database that depicts the relationships among actors (System users). The relationship between thee entities are linked using the primary and foreign keys.
 
-## Data Dictinary Extract
-
+## Data Disctinary Extract
+The data dictionary shows set of data describing the scope, format, type, description and the relationship between the attributes. It is used to control access to and manipulation of the datastore.
 
