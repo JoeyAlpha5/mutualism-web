@@ -26,6 +26,6 @@
 
 ## Entity Relational Diagram (ERD)
 
-## Data Disctinary Extract
+## Data Dictinary Extract
 
 
