@@ -5,18 +5,25 @@
 
 * Our goal is to build a robust database of applicants (Verified ID, business plan, (financials if existing, location etc) that are looking to develop small businesses. With a healthy database of applicants (many hooked up to financials which we can view), we will be to serve as an intermediary (or fund) for the private sector to sustainably invest in Township SMMEs across SA & beyond.  
 
-## Actors
-* Partners (Invested SMMEs)
-* Users/Applicants
-* Consultants
-
 ## To Do List
-- [x] About Mutualism Investments 
+- [x] About Mutualism Investments
+- [x] Systems users/actors 
 - [ ] Analysis and Background 
 - [ ] UML Class Diagram
 - [ ] Use Case Sets 
 - [ ] Entity Relational Diagram (ERD)
 - [ ] Data Dictinary Extracts
+
+## Users/Actors
+* Partners (Invested SMMEs)
+* Users/Applicants
+* Consultants
+
+#### Partners
+Partners are for users who have succefully received financing from Mutualism.
+**Class**
+
+
 ## Analysis and Background
 
 ## UML Class Diagram
