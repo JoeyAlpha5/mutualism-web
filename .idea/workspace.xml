@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c4aa27-29ea-4910-938c-8a650394c598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mutualism-web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ElementStyles/AccountMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ElementStyles/Hamburger.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Maincontent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Menubar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/SideContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/WebLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logo/mutualism_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logo/mutualism_logo_sm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ElementStyles/AccountMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ElementStyles/AccountMenu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +56,8 @@
       <workItem from="1612275980968" duration="547000" />
       <workItem from="1612276569885" duration="612000" />
       <workItem from="1612280723383" duration="12039000" />
-      <workItem from="1612298494760" duration="14212000" />
+      <workItem from="1612298494760" duration="14926000" />
+      <workItem from="1612313772654" duration="125000" />
     </task>
     <servers />
   </component>
@@ -88,6 +74,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="673" y="280" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1612276578878">
