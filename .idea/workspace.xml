@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c4aa27-29ea-4910-938c-8a650394c598" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Fonts/Helvetica-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fonts/Helvetica-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fonts/helvetica-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/About/Path 194.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/About/Path 195.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/About/graphic.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ElementStyles/AccountMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ElementStyles/AccountMenu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,7 @@
       <workItem from="1612280723383" duration="12039000" />
       <workItem from="1612298494760" duration="14926000" />
       <workItem from="1612313772654" duration="125000" />
+      <workItem from="1612365583023" duration="513000" />
     </task>
     <servers />
   </component>
@@ -75,27 +80,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="673" y="280" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1612276578878">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="673" y="280" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1612276578878" />
-    <state width="1243" height="276" key="GridCell.Tab.0.bottom" timestamp="1612276532586">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1243" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1612276532586" />
-    <state width="1243" height="276" key="GridCell.Tab.0.center" timestamp="1612276532586">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1243" height="276" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1612276532586" />
-    <state width="1243" height="276" key="GridCell.Tab.0.left" timestamp="1612276532586">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1243" height="276" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1612276532586" />
-    <state width="1243" height="276" key="GridCell.Tab.0.right" timestamp="1612276532586">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1243" height="276" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1612276532586" />
   </component>
 </project>
