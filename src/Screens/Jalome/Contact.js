@@ -3,7 +3,7 @@ const Contact = ()=>{
     return(
         <div className="main-body-col-1">
             <div className="mid-content">
-                <p>Contact</p>
+                <p>This is a test on the contact page</p>
             </div>
         </div>
     )

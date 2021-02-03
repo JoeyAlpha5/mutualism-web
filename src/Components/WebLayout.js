@@ -9,7 +9,7 @@ function WebLayout(props) {
 
     const renderMainContent = ()=>{
         console.log(props.page);
-        if(props.page == "contact"){
+        if(props.page === "contact"){
             return <Contact/>
         }else{
             return <About/>
@@ -20,7 +20,7 @@ function WebLayout(props) {
         <div className="container">
             <Sidebar/>
             {renderMainContent()}
-            <SidePanel/>
+            <SidePanel page={props.page}/>
         </div>
     );
 }

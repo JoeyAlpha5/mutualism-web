@@ -1,13 +1,4 @@
-.App {
-
-}
-
-.logo{
-  margin-top: -1rem;
-  margin-right: 0.5rem;
-  margin-left: -0.5rem;
-}
-
+/*Overall styling of the app components*/
 .container{
   height: 100%;
   margin: 0;
@@ -16,128 +7,230 @@
   display: flex;
 }
 
-#sidebar{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  background: transparent;
-  border-right: 1px solid rgb(255 255 255 / 30%);
-  transition: width .35s;
-}
+/*Styling for the sidebar*/
+  #sidebar{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: transparent;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transition: width .35s;
+  }
 
-#sidebar.sidebar-shown{
-  background-color: #000;
-}
+  #sidebar.sidebar-shown{
+    background-color: #000;
+  }
 
-#sidebar.collapsed{
-  width: 7%;
-}
+  #sidebar.collapsed{
+    width: 7%;
+  }
 
-.sidebar-nav{
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .sidebar-nav{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Styling for the hamburger menu icon*/
+  #menu-icon{
+    visibility: visible;
+    color: #ffffff;
+    cursor: pointer;
+  }
 
-#menu-icon{
-  visibility: visible;
-  color: #ffffff;
-  cursor: pointer;
-}
+  #menu-icon.hide{
+    visibility: hidden;
+  }
 
-#menu-icon.hide{
-  visibility: hidden;
-}
+  /*Styling shared for the sidebar elements handling explansion
+  and minimising the sidebar*/
+  #sidebar-elements{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: visible;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: row;
+  }
 
-#sidebar-elements{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  visibility: visible;
-  margin-top: -4rem;
-  display: flex;
-  flex-direction: row;
-}
+  #sidebar-elements.hide{
+    visibility: hidden;
+  }
 
-#sidebar-elements.hide{
-  visibility: hidden;
-}
+  #minimize{
+    align-items: center;
+    display: flex;
+    width: 10%;
+    height: 100%;
+    background: white;
+    color: black;
+    cursor: pointer;
+  }
 
-#minimize{
-  align-items: center;
-  display: flex;
-  width: 10%;
-  height: 100%;
-  background: white;
-  color: black;
-  cursor: pointer;
-}
+  .back-icon {
+    align-items: center;
+    margin: 0 auto;
+    font-size: 48px;
+  }
 
-.back-icon {
-  align-items: center;
-  margin: 0 auto;
-  font-size: 48px;
-}
+  /*Shared styling for the menu items in the sidebar*/
+  #sidenav-options{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+  }
 
-#sidenav-options{
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #ffffff;
-}
+  .link-items{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
 
-.link-items{
-  display: flex;
-  flex-direction: column;
-  padding-left: 2rem;
-}
+  .side-nav{
+    font-size: 25px;
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
 
-.side-nav{
-  font-size: 25px;
-  list-style: none;
-  font-weight: bold;
-  margin-bottom: 3rem;
-}
+  .side-nav-item{
+    padding: 0.5rem 0;
+  }
 
-.side-nav-item{
-  padding: 0.5rem 0;
-}
+  .nav-item{
+    cursor: pointer;
+    transition: transform .2s;
+  }
 
-.nav-item{
-  cursor: pointer;
-  transition: transform .2s;
-}
+  .nav-item:hover{
+    font-weight: bolder;
+    transform: scale(1.2);
+  }
 
-.nav-item:hover{
-  font-weight: bolder;
-  transform: scale(1.2);
-}
+  /*Styling for the static contact elements of the expanded sidebar*/
+  #quick-contacts{
+    color: #46A16E;
+    font-size: 15px;
+  }
 
-#quick-contacts{
-  color: #46A16E;
-  font-size: 15px;
-}
-
+  /*Shared styling for the main body components of the app*/
 .main-body-col-1{
   margin-left: 7%;
   margin-top: 3rem;
   width: 53%;
-  background: black;
   color: white;
 }
+/*Styling of the Main content Section*/
+.mid-content{
+  width: 100%;
+  margin: 0 6rem;
+  text-align: left;
+}
 
+h1.caption{
+  padding: 0.5rem 0rem;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+h2.caption{
+  padding: 0.5rem 0rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+p.body-text{
+  padding: 0.5rem 0rem;
+  width: 85%;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.logo{
+  margin-top: -1rem;
+  margin-right: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+.overlay-section-main{
+  margin-top: 5rem;
+  text-align: left;
+  position: relative;
+}
+
+.overlay-section-elements{
+  position: absolute;
+}
+
+img{
+
+}
+
+img.image{
+  text-align: left;
+  width: 85%;
+  height: auto;
+}
+
+img.shape{
+  width: 145%;
+  height: auto;
+  margin: 2rem -3.5rem 0;
+}
+
+.shape+.shape{
+  margin-top: -30rem;
+}
+
+.logo-lg{
+  width: 75%;
+  height: auto;
+}
+
+.newsletter{
+  margin: 2rem 0;
+  background-color: white;
+  border-radius: 2.5rem;
+  cursor:pointer;
+  width: 35%;
+  padding: 0.8rem;
+  font-size: large;
+  border: 0.5rem #ffffff;
+  box-shadow: 3px 3px 3px rgba(1,1,1,0.3);
+  text-align: center;
+  transition: color 0.3s;
+  outline: none;
+}
+
+.newsletter:hover{
+  background: black;
+  color: white;
+  transition: transform .2s;
+}
+
+.newsletter:active{
+  background: #46A16E;
+  color: #000000;
+  transform: scale(0.95);
+}
+
+.newsletter-arrow{
+  font-size: 48px;
+}
+
+/*Styling of the side content section of the app*/
 .main-body-col-2{
   color: #ffffff;
   margin-left: 60%;
   width: 40%;
   height: 100%;
   background: #111111;
-  position: absolute;
-  overflow: hidden;
+  position: fixed;
 }
 
 .top-menubar{
@@ -155,10 +248,3 @@
   margin: 0 3rem;
 }
 
-.mid-content{
-  margin: 0 4rem;
-}
-
-/* .col-12.col-lg-2.home-left {
-  height: 100%;
-} */
