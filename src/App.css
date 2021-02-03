@@ -1,38 +1,157 @@
 .App {
-  text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  margin-top: -1rem;
+  margin-right: 0.5rem;
+  margin-left: -0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#sidebar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: black;
+  border-right: white;
+  box-shadow: 1px 0 4px rgba(255,255,255,0.5);
+  transition: width .35s;
+}
+
+#sidebar.collapsed{
+  width: 7%;
+}
+
+.sidebar-nav{
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#menu-icon{
+  visibility: visible;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#menu-icon.hide{
+  visibility: hidden;
+}
+
+#sidebar-elements{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  visibility: visible;
+  margin-top: -4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar-elements.hide{
+  visibility: hidden;
+}
+
+#minimize{
+  align-items: center;
+  display: flex;
+  width: 10%;
+  height: 100%;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.back-icon {
+  align-items: center;
+  margin: 0 auto;
+  font-size: 48px;
+}
+
+#sidenav-options{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+}
+
+.link-items{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.side-nav{
+  font-size: 25px;
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.side-nav-item{
+  padding: 0.5rem 0;
+}
+
+.nav-item{
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.nav-item:hover{
+  font-weight: bolder;
+  transform: scale(1.2);
+}
+
+#quick-contacts{
+  color: #46A16E;
+  font-size: 15px;
+}
+
+.main-body-col-1{
+  margin-left: 7%;
+  margin-top: 8rem;
+  width: 53%;
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-body-col-2{
+  color: #ffffff;
+  margin-left: 60%;
+  width: 40%;
+  height: 100%;
+  background: #111111;
+  position: absolute;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-menubar{
+  margin: 4rem 3rem 2rem 3rem;
+}
+
+.top-menu-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.side-content{
+  margin: 0 3rem;
+}
+
+.mid-content{
+  margin: 0 4rem;
 }
