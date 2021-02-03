@@ -8,9 +8,7 @@
 ## To Do List
 - [x] About Mutualism Investments
 - [x] Systems users/actors 
-- [ ] Analysis and Background 
-- [ ] UML Class Diagram
-- [ ] Use Case Sets 
+- [ ] Use Case Sets and Requirements
 - [ ] Entity Relational Diagram (ERD)
 - [ ] Data Dictinary Extracts
 
@@ -39,10 +37,6 @@
 * Status
 * Date
 * Time Estimation
-
-
-## Analysis and Background
-
 
 ## Use Case Sets and Requirements
 Use cases are sets of actions, services, and functions that the system needs to perform. A use case set for a system is a tabular representation of the relationship between the user and the different use cases in which the user is involved, it also shows the relationships that the use cases have with each other. 
