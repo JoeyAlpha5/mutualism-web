@@ -1,17 +1,16 @@
 import React from 'react';
+import Sidebar from "../../Components/Sidebar";
+import Main from "../../Components/Maincontent";
+import SidePanel from "../../Components/SideContent";
+
 const Home = ()=>{
     return (
         <div className="main">
             <div className="overlay">
                 <div className="container outter-container">
-                    <div className="row">
-                        <div className="col-12 col-lg-2 home-left">col-sm-8</div>
-                        <div className="col-12 col-lg-10 home-right">    
-                            <div className="container inner">
-                                col-sm-10
-                            </div>
-                        </div>
-                    </div>
+                    <Sidebar/>
+                    <Main page={"home"}/>
+                    <SidePanel page={"home"}/>
                 </div>
             </div>
         </div>

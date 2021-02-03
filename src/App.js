@@ -1,10 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 import './Screens/Jalome/styles/style.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import Home from './Screens/Jalome/Home';
+import WebLayout from './Components/WebLayout';
+
 function App() {
   return (
-      <Home/>
+    <Router className="App">
+      <Switch>
+          <Route path="/about">
+            <WebLayout page={"about"} />
+          </Route>
+          <Route path="/contact">
+            <WebLayout page={"contact"} />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 

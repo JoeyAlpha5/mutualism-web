@@ -15,3 +15,17 @@
 .outter-container{
     max-width: 100%;
 }
+
+#main-homepage-content{
+    background-color: transparent;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    color: #46A16E;
+}
