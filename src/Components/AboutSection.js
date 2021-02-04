@@ -32,3 +32,4 @@ function AboutInfo(){
     );
 }
 
+export default AboutInfo

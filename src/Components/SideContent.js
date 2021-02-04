@@ -2,13 +2,13 @@
 
 import React from 'react';
 import Menu from './Menubar';
-import {AboutInfo as AboutSection} from "./AboutSection";
+import AboutInfo from "./AboutSection";
 import {ContactSide as ContactForm} from "../Screens/Jalome/Contact";
 
 function SidePanel(props){
     const renderSideContent = () => {
         if (props.page === "about"){
-            return <AboutSection/>
+            return <AboutInfo/>
         }else if(props.page === "contact"){
             return <ContactForm/>
         }else{
@@ -26,4 +26,4 @@ function SidePanel(props){
         </div>
     );
 }
-
+export default SidePanel
