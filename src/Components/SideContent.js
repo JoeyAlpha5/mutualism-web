@@ -9,10 +9,16 @@ function SidePanel(props){
             return <AboutSection/>
         }else if(props.page === "contact"){
             return <ContactForm/>
+        }else{
+            return(
+                <div className="side-content">
+                    This is test
+                </div>
+            )
         }
     }
     return(
-        <div className="main-body-col-2">
+        <div className="main-body-col-2" id={props.page === "home"? "main-homepage-content":""}>
            <Menu/>
             {renderSideContent()}
         </div>

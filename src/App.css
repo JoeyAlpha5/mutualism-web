@@ -247,4 +247,59 @@ img.shape{
 .side-content{
   margin: 0 3rem;
 }
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.formElement{
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin: 0.5rem;
+  background: #444444;
+  color: #dddddd;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.contact-details{
+  display: flex;
+  flex-direction: row;
+  width: 43rem;
+
+
+}
+
+.email + .phone{
+  margin-left: 1rem;
+}
+
+.message{
+  height: 15rem;
+  resize: none;
+}
+
+.submit{
+  margin: 0.5rem;
+}
+
+.gmap_canvas{
+  margin-top: 1rem;
+  margin-left: -3rem;
+}
+
+.follow-theboxshoplifestyle{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.theboxshoplifestyle-instagram{
+  margin-right: 1rem;
+  font-weight: lighter;
+}
 
