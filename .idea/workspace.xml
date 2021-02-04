@@ -5,9 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContactForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Maincontent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Maincontent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/SideContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SideContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WebLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WebLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/Jalome/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/Jalome/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Screens/Jalome/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/Jalome/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/Jalome/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/Jalome/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -61,7 +67,8 @@
       <workItem from="1612280723383" duration="12039000" />
       <workItem from="1612298494760" duration="14926000" />
       <workItem from="1612313772654" duration="125000" />
-      <workItem from="1612365583023" duration="28322000" />
+      <workItem from="1612365583023" duration="29472000" />
+      <workItem from="1612431803208" duration="5250000" />
     </task>
     <servers />
   </component>

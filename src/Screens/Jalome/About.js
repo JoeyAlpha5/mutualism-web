@@ -4,13 +4,14 @@ import pathA from '../../images/About/Path 194.svg';
 import pathB from '../../images/About/Path 195.svg';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import logolg from '../../images/logo/mutualism_logo.png';
+import {Link} from "react-router-dom";
 
 const About = ()=>{
     return(
         <div className="main-body-col-1">
             <div className="mid-content">
-                <h1 className="caption">Izandla Ziyagezana</h1>
-                <h2 className="caption">“One hand washes another”</h2>
+                <h1 className="caption" style={{color: "#46A16E"}}>Izandla Ziyagezana</h1>
+                <h2 className="caption" style={{color: "#46A16E"}}>“One hand washes another”</h2>
                 <p className="body-text">This proverb reflects our business model in short:
                     “Give a man a fish, and you’ll feed him for a day.
                     Teach a man to fish, and you’ve fed him for a lifetime.”
@@ -42,7 +43,7 @@ const About = ()=>{
                     <img src={pathB} className="graphic shape" alt="graphic shape"/>
                 </div>
                 <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
-                <h1 className="caption">Logo Explained</h1>
+                <h1 className="caption" style={{color: "#46A16E"}}>Logo Explained</h1>
                 <p className="body-text">Our logo is a rhino and an oxpecker — this symbolizes the
                     symbiotic relationship of mutualism, where two different
                     parties benefit with each other.</p>
@@ -50,4 +51,32 @@ const About = ()=>{
         </div>
     )
 }
-export default About
+function AboutInfo(){
+    return(
+        <div className="side-content">
+            <p className="body-text">Mutualism was founded to appease the many social and
+                economic issues that have become so prevalent in
+                South Africa due to the recent atrocities of Apartheid.
+                Unfortunately, the repercussions of Apartheid are very
+                much prevalent today; South Africa has deeply rooted
+                issues with wealth disparity, cyclical poverty, and an
+                unequal financing system.</p>
+            <p className="body-text">Our team works collaboratively to ensure that our business
+                partners are successful. We combine a variety of experience
+                and expertise in business strategy, finance, marketing, and
+                relationship-building to push our partners forward.</p>
+            <h3>Business Consulting</h3>
+            <p className="body-text">We are a socially-minded financing firm designed to enhance
+                sustainable, locally owned businesses.</p>
+            <h3>Financing Opportunity</h3>
+            <p className="body-text">We bridge the gap in funding  opportunities for Township-based
+                South Africans</p>
+            <h3>Hands on Support</h3>
+            <p className="body-text">We offer tailored support to offer guidance in areas of our partners’
+                choosing.</p>
+            <Link to="/contact" className="nav-item" style={{fontSize:"2rem", fontWeight:"lighter"}}><IoIosArrowRoundForward class="newsletter-arrow"/>Get in touch</Link>
+        </div>
+    );
+}
+
+export {About as AboutMain, AboutInfo as AboutSide};

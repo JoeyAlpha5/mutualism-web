@@ -1,3 +1,5 @@
+/*This module is no longer needed, this function is in the About component*/
+
 import React from 'react';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -30,4 +32,3 @@ function AboutInfo(){
     );
 }
 
-export default AboutInfo;

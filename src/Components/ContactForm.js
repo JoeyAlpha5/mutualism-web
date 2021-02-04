@@ -1,3 +1,5 @@
+/*This module is no longer needed, this function is now in the Contact component*/
+
 import React from 'react';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -26,5 +28,3 @@ function ContactForm(){
         </div>
     );
 }
-
-export default ContactForm;

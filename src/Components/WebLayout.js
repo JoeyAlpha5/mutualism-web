@@ -1,26 +1,44 @@
 import React, {useEffect} from 'react';
 import Sidebar from "./Sidebar";
-import Main from "./Maincontent";
-import SidePanel from "./SideContent";
-import Contact from '../Screens/Jalome/Contact';
-import About from '../Screens/Jalome/About';
+import {ContactMain, ContactSide} from '../Screens/Jalome/Contact';
+import {AboutMain, AboutSide} from "../Screens/Jalome/About";
+import Home from "../Screens/Jalome/Home";
+import Menu from "./Menubar";
 
 function WebLayout(props) {
 
-    const renderMainContent = ()=>{
+    const renderContent = ()=>{
         console.log(props.page);
         if(props.page === "contact"){
-            return <Contact/>
+            return (
+                <div className="container">
+                    <Sidebar/>
+                    <ContactMain/>
+                    <div className="main-body-col-2">
+                        <Menu/>
+                        <ContactSide/>
+                    </div>
+                </div>
+            );
+        }else if(props.page === "about"){
+            return (
+                <div className="container">
+                    <Sidebar/>
+                    <AboutMain/>
+                    <div className="main-body-col-2">
+                        <Menu/>
+                        <AboutSide/>
+                    </div>
+                </div>
+            );
         }else{
-            return <About/>
+            return <Home page={"home"}/>
         }
     }
 
     return (
-        <div className="container">
-            <Sidebar/>
-            {renderMainContent()}
-            <SidePanel page={props.page}/>
+        <div>
+            {renderContent()}
         </div>
     );
 }

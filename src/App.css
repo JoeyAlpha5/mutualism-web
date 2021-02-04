@@ -268,7 +268,7 @@ img.shape{
 .contact-details{
   display: flex;
   flex-direction: row;
-  width: 43rem;
+  width: 103%;
 
 
 }
@@ -298,8 +298,19 @@ img.shape{
   align-items: center;
 }
 
-.theboxshoplifestyle-instagram{
+.theboxshoplifestyle-instagram-label{
   margin-right: 1rem;
   font-weight: lighter;
 }
 
+.theboxshoplifestyle-instagram{
+  margin-right: 1rem;
+  font-weight: lighter;
+  color: #46A16E;
+  transition: transform .3s;
+}
+
+.theboxshoplifestyle-instagram:hover{
+  font-weight: bolder;
+  transform: scale(1.2);
+}
