@@ -78,10 +78,11 @@ button:active{
 }
 
 .home-bottom {
-    width: 100%;
+    width: 92%;
     position: fixed;
     bottom: 0;
-    background: hsl(0deg 0% 0% / 40%);
+    background: hsl(0deg 0% 0% / 50%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     height: 25%;
     display: grid;
@@ -89,12 +90,20 @@ button:active{
     padding: 3%;
 }
 
+.home-bottom::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    background: hsla(0 0% 0% /100%);
+    filter: blur(8px);
+}
+
 .space{
     height: 15rem;
 }
 
 .mid-content{
-    padding-bottom: 400px;
+    padding-bottom: 30%;
 }
 
 .stats-list{

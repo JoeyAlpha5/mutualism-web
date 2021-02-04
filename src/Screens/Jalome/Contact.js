@@ -7,20 +7,20 @@ const Contact = ()=>{
     return(
         <div className="main-body-col-1">
             <div className="mid-content">
-                <h1 className="caption" style={{color: "#46A16E"}}>Contact Us.</h1>
-                <p className="body-text">
+                <h1 className="caption animate__animated animate__fadeInUp" style={{color: "#46A16E"}}>Contact Us.</h1>
+                <p className="body-text animate__animated animate__fadeInUp">
                     We’re empowering businesses through a new financing and <br/>
                     consulting strategy which brings successes to the small business <br/>
                     owners of South Africa. <br/>
                 </p>
-                <p className="body-text">
+                <p className="body-text animate__animated animate__fadeInDown">
                     Discover what’s possible with community centered investment. <br/>
                 </p>
-                <h3>Come see us.</h3>
-                <div className="follow-theboxshoplifestyle">
+                <h3 className="animate__animated animate__fadeInUp">Come see us.</h3>
+                <div className="follow-theboxshoplifestyle animate__animated animate__fadeInUp">
                     <SiInstagram className="theboxshoplifestyle-instagram-label"/><div className="body-text theboxshoplifestyle-instagram-label">theboxshoplifestyle</div><div className="body-text theboxshoplifestyle-instagram">Follow</div>
                 </div>
-                <div className="gallery">
+                <div className="gallery animate__animated animate__fadeInDown">
                     <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
                     <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
                     <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
