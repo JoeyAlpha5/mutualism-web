@@ -3,7 +3,7 @@ import graphic from '../../images/About/graphic.svg';
 import pathA from '../../images/About/Path 194.svg';
 import pathB from '../../images/About/Path 195.svg';
 import { IoIosArrowRoundForward } from "react-icons/io";
-import logolg from '../../images/logo/mutualism_logo.png';
+import logolg from '../../images/logo/mutualism_logo_large.png';
 import {Link} from "react-router-dom";
 
 const About = ()=>{
