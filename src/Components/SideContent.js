@@ -14,7 +14,7 @@ function SidePanel(props){
         }else{
             return(
                 <div className="side-content">
-                    This is test
+                    
                 </div>
             )
         }

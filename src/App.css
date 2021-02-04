@@ -12,7 +12,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     background: transparent;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     transition: width .35s;
@@ -34,6 +34,7 @@
   }
   /*Styling for the hamburger menu icon*/
   #menu-icon{
+    margin-top: 1rem;
     visibility: visible;
     color: #ffffff;
     cursor: pointer;
@@ -43,6 +44,19 @@
     visibility: hidden;
   }
 
+  #social-links{
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    margin-top: 525%;
+  }
+
+  .social-lnk{
+    margin: 40% 0;
+  }
+
   /*Styling shared for the sidebar elements handling explansion
   and minimising the sidebar*/
   #sidebar-elements{
@@ -50,7 +64,7 @@
     height: 100%;
     position: fixed;
     visibility: visible;
-    margin-top: -4rem;
+    margin-top: -2rem;
     display: flex;
     flex-direction: row;
   }
@@ -134,7 +148,7 @@
 
 h1.caption{
   padding: 0.5rem 0rem;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -165,6 +179,7 @@ p.body-text{
 
 .overlay-section-elements{
   position: absolute;
+  z-index: 1;
 }
 
 img{
@@ -192,35 +207,34 @@ img.shape{
   height: auto;
 }
 
-.newsletter{
-  margin: 2rem 0;
-  background-color: white;
-  border-radius: 2.5rem;
-  cursor:pointer;
-  width: 35%;
-  padding: 0.8rem;
-  font-size: large;
-  border: 0.5rem #ffffff;
-  box-shadow: 3px 3px 3px rgba(1,1,1,0.3);
-  text-align: center;
-  transition: color 0.3s;
-  outline: none;
-}
+/*.action-button{*/
+/*  !*margin: 2rem 0;*!*/
+/*  background-color: white;*/
+/*  !*border-radius: 2.5rem;*!*/
+/*  cursor:pointer;*/
+/*  !*width: 35%;*!*/
+/*  !*padding: 0.8rem;*!*/
+/*  !*font-size: large;*!*/
+/*  !*border: 0.5rem #ffffff;*!*/
+/*  box-shadow: 3px 3px 3px rgba(1,1,1,0.3);*/
+/*  text-align: center;*/
+/*  transition: color 0.3s;*/
+/*}*/
 
-.newsletter:hover{
-  background: black;
-  color: white;
-  transition: transform .2s;
-}
+/*.action-button:hover{*/
+/*  background: black;*/
+/*  color: white;*/
+/*  transition: transform .2s;*/
+/*}*/
 
-.newsletter:active{
-  background: #46A16E;
-  color: #000000;
-  transform: scale(0.95);
-}
+/*.action-button:active{*/
+/*  background: #46A16E;*/
+/*  color: #000000;*/
+/*  transform: scale(0.95);*/
+/*}*/
 
 .newsletter-arrow{
-  font-size: 48px;
+  font-size: 2rem;
 }
 
 /*Styling of the side content section of the app*/
@@ -286,7 +300,7 @@ img.shape{
   margin: 0.5rem;
 }
 
-.gmap_canvas{
+._canvas{
   margin-top: 1rem;
   margin-left: -3rem;
 }
@@ -313,4 +327,16 @@ img.shape{
 .theboxshoplifestyle-instagram:hover{
   font-weight: bolder;
   transform: scale(1.2);
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 4%;
+  grid-column-gap: 2%;
+  margin-top: 2%;
+  width: 130%;
+}
+
+.grid-item{
 }

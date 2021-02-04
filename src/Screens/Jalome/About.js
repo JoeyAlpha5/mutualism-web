@@ -5,48 +5,68 @@ import pathB from '../../images/About/Path 195.svg';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import logolg from '../../images/logo/mutualism_logo_large.png';
 import {Link} from "react-router-dom";
+import Space from "../../Components/Jalome/Space";
 
 const About = ()=>{
     return(
         <div className="main-body-col-1">
             <div className="mid-content">
-                <h1 className="caption" style={{color: "#46A16E"}}>Izandla Ziyagezana</h1>
-                <h2 className="caption" style={{color: "#46A16E"}}>“One hand washes another”</h2>
-                <p className="body-text">This proverb reflects our business model in short:
-                    “Give a man a fish, and you’ll feed him for a day.
-                    Teach a man to fish, and you’ve fed him for a lifetime.”
-                    Mutualism strives to educate partners through hands
-                    on learning, and many other resources. We want to
-                    pass on business acumen so thousands of small
-                    business owners can flourish. </p>
+                <h1 className="caption animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>
+                    Izandla <br/>
+                    Ziyagezana <br/>
+                </h1>
+                <h2 className="caption animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>
+                    “One hand washes another”
+                </h2>
+                <p className="body-text animate__animated animate__fadeInUp">
+                    This proverb reflects our business model in short: <br/>
+                    “Give a man a fish, and you’ll feed him for a day. <br/>
+                    Teach a man to fish, and you’ve fed him for a lifetime.” <br/>
+                    Mutualism strives to educate partners through hands <br/>
+                    on learning, and many other resources. We want to <br/>
+                    pass on business acumen so thousands of small <br/>
+                    business owners can flourish. <br/>
+                </p>
                 <div className="overlay-section-main">
                     <div className="overlay-section-elements">
-                        <img src={graphic} className="graphic image" alt="graphic" />
-                        <p className="body-text">“Give a man a fish, and he’ll eat for a day. Teach a man
-                            to fish, and he’ll eat for a lifetime. What they didn’t say is,
-                            “And it would be nice if you gave him a damn fishing rod.”
-                            — This quote is from Trevor Noah’s (Legendary South African)
-                            Born a Criminal… and it so accurately reflects our business
-                            model because, beyond providing educating resources we provide
-                            the physical asset to conduct and carry your own business.
-                            We give you the fishing rod. </p>
-                        <h1 className="caption">Here To Help You Grow</h1>
-                        <p className="body-text">Mutualism is a socially-minded financing firm designed to
-                            support township based entrepreneurs and small businesses
-                            with the goal of enhancing sustainable, locally owned businesses.</p>
-                        <p className="body-text">Get to know our firm’s team that is dedicated to supporting entrepreneurs
-                            and small businesses. </p>
+                        <img src={graphic} className="graphic image animate__animated animate__fadeInUp" alt="graphic" />
+                        <p className="body-text animate__animated animate__fadeInUp">
+                            “Give a man a fish, and he’ll eat for a day. Teach a man <br/>
+                            to fish, and he’ll eat for a lifetime. What they didn’t say is, <br/>
+                            “And it would be nice if you gave him a damn fishing rod.” <br/>
+                            — This quote is from Trevor Noah’s (Legendary South African) <br/>
+                            Born a Criminal… and it so accurately reflects our business <br/>
+                            model because, beyond providing educating resources we provide <br/>
+                            the physical asset to conduct and carry your own business. <br/>
+                            We give you the fishing rod. <br/>
+                        </p>
+                        <h1 className="caption">
+                            Here To  <br/>
+                            Help You  <br/>
+                            Grow <br/>
+                        </h1>
+                        <p className="body-text">
+                            Mutualism is a socially-minded financing firm designed to <br/>
+                            support township based entrepreneurs and small businesses <br/>
+                            with the goal of enhancing sustainable, locally owned businesses. <br/>
+                        </p>
+                        <p className="body-text">
+                            Get to know our firm’s team that is dedicated to supporting entrepreneurs  <br/>
+                            and small businesses. <br/>
+                        </p>
                         <h2 className="caption">Applications coming soon.</h2>
-                        <button className="newsletter"><IoIosArrowRoundForward className="newsletter-arrow"/>Join Newsletter</button><br/>
+                        <button className=""><IoIosArrowRoundForward className="newsletter-arrow"/>Join Newsletter</button><br/>
                     </div>
-                    <img src={pathA} className="graphic shape" alt="graphic shape"/>
+                    <img src={pathA} className="graphic shape animate__animated animate__fadeInDown" alt="graphic shape"/>
                     <img src={pathB} className="graphic shape" alt="graphic shape"/>
                 </div>
                 <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
                 <h1 className="caption" style={{color: "#46A16E"}}>Logo Explained</h1>
-                <p className="body-text">Our logo is a rhino and an oxpecker — this symbolizes the
-                    symbiotic relationship of mutualism, where two different
-                    parties benefit with each other.</p>
+                <p className="body-text">
+                    Our logo is a rhino and an oxpecker — this symbolizes the <br/>
+                    symbiotic relationship of mutualism, where two different <br/>
+                    parties benefit with each other. <br/>
+                </p>
             </div>
         </div>
     )
@@ -54,26 +74,36 @@ const About = ()=>{
 function AboutInfo(){
     return(
         <div className="side-content">
-            <p className="body-text">Mutualism was founded to appease the many social and
-                economic issues that have become so prevalent in
-                South Africa due to the recent atrocities of Apartheid.
-                Unfortunately, the repercussions of Apartheid are very
-                much prevalent today; South Africa has deeply rooted
-                issues with wealth disparity, cyclical poverty, and an
-                unequal financing system.</p>
-            <p className="body-text">Our team works collaboratively to ensure that our business
-                partners are successful. We combine a variety of experience
-                and expertise in business strategy, finance, marketing, and
-                relationship-building to push our partners forward.</p>
+            <p className="body-text">
+                Mutualism was founded to appease the many social and <br/>
+                economic issues that have become so prevalent in <br/>
+                South Africa due to the recent atrocities of Apartheid. <br/>
+                Unfortunately, the repercussions of Apartheid are very <br/>
+                much prevalent today; South Africa has deeply rooted <br/>
+                issues with wealth disparity, cyclical poverty, and an <br/>
+                unequal financing system. <br/>
+            </p>
+            <p className="body-text">
+                Our team works collaboratively to ensure that our business <br/>
+                partners are successful. We combine a variety of experience <br/>
+                and expertise in business strategy, finance, marketing, and <br/>
+                relationship-building to push our partners forward. <br/>
+            </p>
             <h3>Business Consulting</h3>
-            <p className="body-text">We are a socially-minded financing firm designed to enhance
-                sustainable, locally owned businesses.</p>
+            <p className="body-text">
+                We are a socially-minded financing firm designed to enhance <br/>
+                sustainable, locally owned businesses. <br/>
+            </p>
             <h3>Financing Opportunity</h3>
-            <p className="body-text">We bridge the gap in funding  opportunities for Township-based
-                South Africans</p>
+            <p className="body-text">
+                We bridge the gap in funding  opportunities for Township-based <br/>
+                South Africans. <br/>
+            </p>
             <h3>Hands on Support</h3>
-            <p className="body-text">We offer tailored support to offer guidance in areas of our partners’
-                choosing.</p>
+            <p className="body-text">
+                We offer tailored support to offer guidance in areas of our partners’ <br/>
+                choosing. <br/>
+            </p>
             <Link to="/contact" className="nav-item" style={{fontSize:"2rem", fontWeight:"lighter"}}><IoIosArrowRoundForward class="newsletter-arrow"/>Get in touch</Link>
         </div>
     );

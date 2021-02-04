@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { IoChevronBackOutline } from 'react-icons/io5';
+import { IoChevronBackOutline, IoLogoLinkedin, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter} from 'react-icons/io5';
 import './ElementStyles/Hamburger.css';
 
 
@@ -16,6 +16,12 @@ function Sidebar() {
                         <span></span>
                         <span></span>
                     </div>
+                </div>
+                <div id="social-links">
+                    <IoLogoLinkedin className="social-lnk nav-item"/>
+                    <IoLogoFacebook className="social-lnk nav-item"/>
+                    <IoLogoInstagram className="social-lnk nav-item"/>
+                    <IoLogoTwitter className="social-lnk nav-item"/>
                 </div>
                 <div id="sidebar-elements" className={isActive ? "" : "hide"} >
                     <div id="minimize" onClick={handleToggle}>
