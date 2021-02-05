@@ -29,56 +29,52 @@ const About = ()=>{
                     pass on business acumen so thousands of small <br/>
                     business owners can flourish. <br/>
                 </p>
-                <div className="overlay-section-main">
-                    <div className="overlay-section-elements">
-                        <img src={graphic} className="graphic image animate__animated animate__fadeInUp" alt="graphic" />
-                        <br/><br/>
-                        <p className="body-text">
-                            “Give a man a fish, and he’ll eat for a day. Teach a man <br/>
-                            to fish, and he’ll eat for a lifetime. What they didn’t say is, <br/>
-                            “And it would be nice if you gave him a damn fishing rod.” <br/>
-                            — This quote is from Trevor Noah’s (Legendary South African) <br/>
-                            Born a Criminal… and it so accurately reflects our business <br/>
-                            model because, beyond providing educating resources we provide <br/>
-                            the physical asset to conduct and carry your own business. <br/>
-                            We give you the fishing rod. <br/>
-                        </p>
-                        <h1 className="home-heading contact-about-heading here-to-help-you-grow" style={{color:"white"}}>
-                            Here To  <br/>
-                            Help You  <br/>
-                            Grow <br/>
-                        </h1>
-                        <p className="body-text">
-                            Mutualism is a socially-minded financing firm designed to <br/>
-                            support township based entrepreneurs and small businesses <br/>
-                            with the goal of enhancing sustainable, locally owned businesses. <br/>
-                        </p>
-                        <p className="body-text">
-                            Get to know our firm’s team that is dedicated to supporting entrepreneurs  <br/>
-                            and small businesses. <br/>
-                        </p>
-                        <h2>Applications coming soon.</h2>
-                        <Button text="Learn more"/>
-                        <Space/>
-                        <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
-                        <h1 className="home-heading contact-about-heading" style={{color: "#46A16E"}}>Logo Explained</h1>
-                        <p className="body-text">
-                            Our logo is a rhino and an oxpecker — this symbolizes the <br/>
-                            symbiotic relationship of mutualism, where two different <br/>
-                            parties benefit with each other. <br/>
-                        </p>
-                        <Space/>
-                    </div>
-                    <img src={pathA} className="graphic shape animate__animated animate__fadeInDown" alt="graphic shape"/>
-                    <img src={pathB} className="graphic shape" alt="graphic shape"/>
+            </div>
+
+            <div className="path">
+                    <div className="mid-content about-mid-content">
+                    <img src={graphic} className="graphic image animate__animated animate__fadeInUp" alt="graphic" />
+                    <br/><br/>
+                    <p className="body-text">
+                        “Give a man a fish, and he’ll eat for a day. Teach a man <br/>
+                        to fish, and he’ll eat for a lifetime. What they didn’t say is, <br/>
+                        “And it would be nice if you gave him a damn fishing rod.” <br/>
+                        — This quote is from Trevor Noah’s (Legendary South African) <br/>
+                        Born a Criminal… and it so accurately reflects our business <br/>
+                        model because, beyond providing educating resources we provide <br/>
+                        the physical asset to conduct and carry your own business. <br/>
+                        We give you the fishing rod. <br/>
+                    </p>
+                    <h1 className="home-heading contact-about-heading here-to-help-you-grow" style={{color:"white"}}>
+                        Here To  <br/>
+                        Help You  <br/>
+                        Grow <br/>
+                    </h1>
+                    <p className="body-text">
+                        Mutualism is a socially-minded financing firm designed to <br/>
+                        support township based entrepreneurs and small businesses <br/>
+                        with the goal of enhancing sustainable, locally owned businesses. <br/>
+                    </p>
+                    <p className="body-text">
+                        Get to know our firm’s team that is dedicated to supporting entrepreneurs  <br/>
+                        and small businesses. <br/>
+                    </p>
+                    <h2>Applications coming soon.</h2>
+                    <Button text="Learn more"/>
                 </div>
-                {/*<img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>*/}
-                {/*<h1 className="home-heading" style={{color: "#46A16E"}}>Logo Explained</h1>*/}
-                {/*<p className="body-text">*/}
-                {/*    Our logo is a rhino and an oxpecker — this symbolizes the <br/>*/}
-                {/*    symbiotic relationship of mutualism, where two different <br/>*/}
-                {/*    parties benefit with each other. <br/>*/}
-                {/*</p>*/}
+            </div>
+            <div className="overlay-section-elements mid-content about-mid-content">
+                <br/>
+                <br/>
+                <br/>
+                <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
+                <h1 className="home-heading contact-about-heading" style={{color: "#46A16E"}}>Logo Explained</h1>
+                <p className="body-text">
+                    Our logo is a rhino and an oxpecker — this symbolizes the <br/>
+                    symbiotic relationship of mutualism, where two different <br/>
+                    parties benefit with each other. <br/>
+                </p>
+                <Space/>
             </div>
         </div>
     )

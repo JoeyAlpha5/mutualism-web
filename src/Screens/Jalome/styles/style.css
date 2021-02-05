@@ -217,17 +217,22 @@ h3{
     font-size: 13px;
 }
 
-.mid-content.home-mid-content {
+.mid-content.home-mid-content, .mid-content {
     margin-left: 160px;
 }
 
-
-/* .main-heading{
-    font-size: 6rem;
-} */
+.path{
+    background-image: url(../../../images/About/path.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 h1.home-heading.contact-about-heading.here-to-help-you-grow {
     font-size: 4rem;
+}
+
+.mid-content.about-mid-content {
+    padding-bottom: 100px;
 }
 
 @media (max-width:1200px){
@@ -244,7 +249,7 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
         height: 90%;
     }
 
-    .mid-content.home-mid-content {
+    .mid-content.home-mid-content, .mid-content {
         margin-left: 160px;
     }
 
@@ -291,7 +296,7 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 
 
 @media (max-width:950px){
-    .mid-content.home-mid-content {
+    .mid-content.home-mid-content, .mid-content {
         margin-left: 130px;
     }
 
@@ -319,7 +324,7 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 }
 
 @media (max-width:480px){
-    .mid-content.home-mid-content {
+    .mid-content.home-mid-content, .mid-content {
         margin-left: 100px;
     }
 
@@ -352,7 +357,7 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 
 
 @media (max-width:380px){
-    .mid-content.home-mid-content {
+    .mid-content.home-mid-content, .mid-content {
         margin-left: 90px;
     }
 
