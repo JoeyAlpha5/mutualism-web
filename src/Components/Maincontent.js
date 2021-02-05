@@ -20,7 +20,7 @@ function Main(props){
                 </p>
                 
                 
-                <Popup trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal closeOnDocumentClick>
+                <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal closeOnDocumentClick>
                     <div className="modal-heading">
                         <p className="overlay-text">A new modal</p>
                         <h4>How We Help Businesses Thrive</h4>
@@ -31,26 +31,26 @@ function Main(props){
                         <p className="modal-text-info">
                             We provide capital in the form of assets essential to the business operation.<br/> 
                             These assets belong to Mutualism until the business can pay back the principal. <br/>
-                            Once the assets are paid back, ownership of the assets are transferred to the investee.
+                            Once the assets are paid back, ownership of the assets are transferred to the<br/> investee.
                         </p>
 
                         <p class="modal-text-heading">Empowering Ownership</p>
                         <p className="modal-text-info">
-                            Once the assets are paid back, ownership of the asset is transferred to the investee.<br/>
-                            Mutualism’s model of “asset-backed investment” mitigates risk for our partners.
+                            Once the assets are paid back, ownership of the asset is transferred to the<br/> investee.
+                            Mutualism’s model of “asset-backed investment” mitigates risk for<br/> our partners.
                         </p>
 
                         <p class="modal-text-heading">Business Consulting</p>
                         <p className="modal-text-info">
-                            Our hands-on consulting ensures that we properly equip our partners with skills for years of<br/> 
-                            success. We approach consulting through an integrated approach that addresses a business<br/> 
-                            needs to drive sustainability, community engagement, product quality, marketing and sales.
+                            Our hands-on consulting ensures that we properly equip our partners with skills<br/>  for years of
+                            success. We approach consulting through an integrated approach that<br/> addresses a business 
+                            needs to drive sustainability, community engagement,<br/> product quality, marketing and sales.
                         </p>
 
                         <p class="modal-text-heading">Continued Support</p>
                         <p className="modal-text-info">
-                            Mutualism builds relationships with its partners to ensure long-term success. Our mission to<br/>
-                            foster community growth guides our strategy. We provide ongoing support for partners to<br/>
+                            Mutualism builds relationships with its partners to ensure long-term success.<br/> Our mission to
+                            foster community growth guides our strategy. We provide ongoing<br/> support for partners to
                             improve business operations and efficiency.
                         </p>
                     </div>

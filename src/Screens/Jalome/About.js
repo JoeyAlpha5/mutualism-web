@@ -13,7 +13,7 @@ const About = ()=>{
     return(
         <div className="main-body-col-1">
             <div className="mid-content about-mid-content">
-                <h1 className="home-heading animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>
+                <h1 className="home-heading contact-about-heading  animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>
                     Izandla <br/>
                     Ziyagezana
                 </h1>
@@ -43,7 +43,7 @@ const About = ()=>{
                             the physical asset to conduct and carry your own business. <br/>
                             We give you the fishing rod. <br/>
                         </p>
-                        <h1 className="home-heading" style={{color:"white"}}>
+                        <h1 className="home-heading contact-about-heading here-to-help-you-grow" style={{color:"white"}}>
                             Here To  <br/>
                             Help You  <br/>
                             Grow <br/>
@@ -57,11 +57,11 @@ const About = ()=>{
                             Get to know our firm’s team that is dedicated to supporting entrepreneurs  <br/>
                             and small businesses. <br/>
                         </p>
-                        <h2 className="caption">Applications coming soon.</h2>
+                        <h2>Applications coming soon.</h2>
                         <Button text="Learn more"/>
                         <Space/>
                         <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
-                        <h1 className="home-heading" style={{color: "#46A16E"}}>Logo Explained</h1>
+                        <h1 className="home-heading contact-about-heading" style={{color: "#46A16E"}}>Logo Explained</h1>
                         <p className="body-text">
                             Our logo is a rhino and an oxpecker — this symbolizes the <br/>
                             symbiotic relationship of mutualism, where two different <br/>

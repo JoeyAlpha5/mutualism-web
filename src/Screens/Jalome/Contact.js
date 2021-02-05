@@ -7,7 +7,7 @@ const Contact = ()=>{
     return(
         <div className="main-body-col-1">
             <div className="mid-content">
-                <h1 className="home-heading animate__animated animate__fadeInUp" style={{color: "#46A16E"}}>Contact Us.</h1>
+                <h1 className="home-heading contact-about-heading animate__animated animate__fadeInUp" style={{color: "#46A16E"}}>Contact Us.</h1>
                 <p className="body-text">
                     We’re empowering businesses through a new financing and <br/>
                     consulting strategy which brings successes to the small business <br/>

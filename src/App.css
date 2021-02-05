@@ -170,7 +170,7 @@ h2.caption{
 
 p.body-text{
   padding: 0.5rem 0rem;
-  width: 85%;
+  width: 95%;
   font-size: 15px;
   opacity: 70%;
 }
@@ -367,6 +367,7 @@ img.shape{
 
 ::-webkit-scrollbar-thumb {
   background: #46A16E;
+  border-radius: 10px;
 }
 
 @media(max-width: 1800px){
@@ -390,13 +391,20 @@ img.shape{
     margin-top: -50rem;
   }
 }
-
+/* 
 @media(max-width: 1600px){
 
   .shape+.shape{
     margin-top: -30rem;
   }
 
+} */
+
+
+@media (max-width:1600px){
+  .shape+.shape {
+    margin-top: -38rem;
+  }
 }
 
 @media (max-width:1440px){

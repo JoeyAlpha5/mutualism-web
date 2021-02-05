@@ -83,11 +83,12 @@ button:active{
     background: hsl(0deg 0% 0% / 41%);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    height: 150px;
+    height: 160px;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 21px 3% 3%;
-    margin-left:80px;
+    padding: 3%;
+    padding-top: 11px;
+    margin-left: 80px;
 }
 
 h5 {
@@ -157,11 +158,15 @@ h3{
     display: flex;
     flex-direction: column;
     background-color: #fff !important;
-    height: 600px !important;
+    /* height: 600px !important; */
     border: 0px !important;
     border-radius: 10px;
-    width: 600px;
+    /* width: 600px; */
     color: black;
+}
+
+[role='tooltip'].popup-content{
+    height: auto !important;
 }
 
 .popup-overlay {
@@ -187,6 +192,7 @@ h3{
 .modal-Text{
     margin-left: 15px;
     margin-top: 40px;
+    margin-right:15px;
 }
 
 .modal-text-heading{
@@ -199,7 +205,7 @@ h3{
     margin-bottom: 25px;
     margin-top: 6px;
     line-height: 20px;
-    opacity: 70%;
+    opacity: 73%;
     
 }
 
@@ -211,15 +217,35 @@ h3{
     font-size: 13px;
 }
 
+.mid-content.home-mid-content {
+    margin-left: 160px;
+}
+
+
+/* .main-heading{
+    font-size: 6rem;
+} */
+
+h1.home-heading.contact-about-heading.here-to-help-you-grow {
+    font-size: 4rem;
+}
+
+@media (max-width:1200px){
+    .home-bottom{
+        height: 190px;
+    }
+}
+
 @media screen and (max-width:1000px){
 
     .popup-content{
-        width: 100%;
-        overflow: scroll;
+        width: 90%;
+        overflow-y: scroll !important;
+        height: 90%;
     }
 
     .mid-content.home-mid-content {
-        margin-left: 100px;
+        margin-left: 160px;
     }
 
     .mobile-link{
@@ -230,17 +256,12 @@ h3{
         display: none;
     }
 
-    .home-heading{
-        font-size: 2.5rem;
-    }
-
     .main{
         background-image: none;
     }
 
     .mid-content{
         margin-left: 80px;
-        width: 280px;
     }
 
     #sidebar{
@@ -269,14 +290,53 @@ h3{
 }
 
 
-@media (max-width:400px){
+@media (max-width:950px){
+    .mid-content.home-mid-content {
+        margin-left: 130px;
+    }
+
     .home-heading{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:750px){
+    .home-heading{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:660px){
+    .home-heading{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:570px){
+    .home-heading{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:480px){
+    .mid-content.home-mid-content {
+        margin-left: 100px;
+    }
+
+    .home-heading{
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width:400px){
+    /* .home-heading{
         font-size: 1.5rem;
     }
 
     .main_text{
         width: 70%;
-    }
+    } */
 
     .space{
         height: 5rem;
@@ -287,13 +347,102 @@ h3{
         height: 45px;
     }
 
+
+}
+
+
+@media (max-width:380px){
     .mid-content.home-mid-content {
         margin-left: 90px;
     }
+
+    .home-heading{
+        font-size: 1.5rem;
+    }
 }
 
-@media (min-device-height:900px ){
+
+@media (min-height:700px){
     .main_heading{
         margin-top: 4%;
     }
+}
+
+@media (min-height:780px){
+    .main_heading{
+        margin-top: 10%;
+    }
+}
+
+
+@media (min-height:900px ){
+    .main_heading{
+        margin-top: 20%;
+        
+    }
+
+    .contact-about-heading{
+        margin-top: unset !important;
+    }
+}
+
+
+@media(min-height:1000px){
+    .main_heading,.home-heading{
+        margin-top: 20%;
+    }
+
+    .contact-about-heading{
+        margin-top: unset !important;
+    }
+}
+
+
+@media (min-width:1366px) and (min-height:768px){
+    .main_heading{
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:1280px) and (max-height:800px){
+    h1.home-heading.contact-about-heading.here-to-help-you-grow {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width:1280px) and (max-height:950px){
+    h1.home-heading.contact-about-heading.here-to-help-you-grow {
+        font-size: 2rem;
+    }
+}
+
+/* larger screen sizes */
+@media (min-width:1920px) and (min-height:1000px){
+    .main_heading{
+        margin-top: 10%;
+        font-size: 8rem;
+    } 
+
+    .home-heading{
+        font-size: 8rem;
+    }
+
+    .main_text, p.body-text{
+        font-size: 18px;
+    }
+
+    h5{
+        font-size: 25px;
+    }
+
+    .home-bottom{
+        height: 165px;
+    }
+
+
+    h1.home-heading.contact-about-heading.here-to-help-you-grow {
+        font-size: 5rem;
+    }
+
 }
