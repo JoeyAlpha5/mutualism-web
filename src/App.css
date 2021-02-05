@@ -353,4 +353,5 @@ img.shape{
 
 ::-webkit-scrollbar-thumb {
   background: #46A16E;
+  border-radius: 10px;
 }
