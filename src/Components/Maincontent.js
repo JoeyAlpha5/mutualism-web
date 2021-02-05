@@ -8,7 +8,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 function Main(props){
     return(
         <div className="main-body-col-1" id={props.page == "home"? "main-homepage-content":""}>
-            <div className="mid-content">
+            <div className="mid-content home-mid-content">
                 <h1 className="main_heading home-heading animate__animated animate__fadeInDown">
                     Empowering<br/>
                     South Africa's<br/>
