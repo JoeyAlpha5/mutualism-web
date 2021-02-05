@@ -59,17 +59,26 @@ const About = ()=>{
                         </p>
                         <h2 className="caption">Applications coming soon.</h2>
                         <Button text="Learn more"/>
+                        <Space/>
+                        <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
+                        <h1 className="home-heading" style={{color: "#46A16E"}}>Logo Explained</h1>
+                        <p className="body-text">
+                            Our logo is a rhino and an oxpecker — this symbolizes the <br/>
+                            symbiotic relationship of mutualism, where two different <br/>
+                            parties benefit with each other. <br/>
+                        </p>
+                        <Space/>
                     </div>
                     <img src={pathA} className="graphic shape animate__animated animate__fadeInDown" alt="graphic shape"/>
                     <img src={pathB} className="graphic shape" alt="graphic shape"/>
                 </div>
-                <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
-                <h1 className="home-heading" style={{color: "#46A16E"}}>Logo Explained</h1>
-                <p className="body-text">
-                    Our logo is a rhino and an oxpecker — this symbolizes the <br/>
-                    symbiotic relationship of mutualism, where two different <br/>
-                    parties benefit with each other. <br/>
-                </p>
+                {/*<img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>*/}
+                {/*<h1 className="home-heading" style={{color: "#46A16E"}}>Logo Explained</h1>*/}
+                {/*<p className="body-text">*/}
+                {/*    Our logo is a rhino and an oxpecker — this symbolizes the <br/>*/}
+                {/*    symbiotic relationship of mutualism, where two different <br/>*/}
+                {/*    parties benefit with each other. <br/>*/}
+                {/*</p>*/}
             </div>
         </div>
     )

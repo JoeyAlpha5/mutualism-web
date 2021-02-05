@@ -1,7 +1,9 @@
 /*Overall styling of the app components*/
 .container{
   height: 100%;
-  margin: 0;
+  /*width: 100%;*/
+  max-width: 1920px;
+  /*margin: 0px;*/
   padding: 0;
   overflow: auto;
   display: flex;
@@ -12,6 +14,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
+    left: 0px;
     z-index: 5;
     background: transparent;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -23,7 +26,7 @@
   }
 
   #sidebar.collapsed{
-    width: 7%;
+    width: 80px;
   }
 
   .sidebar-nav{
@@ -134,17 +137,22 @@
     font-size: 15px;
   }
 
+  .content-area{
+    margin-left: 80px;
+    display:flex;
+    width: 100%;
+  }
+
   /*Shared styling for the main body components of the app*/
 .main-body-col-1{
-  margin-left: 7%;
   margin-top: 3rem;
-  width: 53%;
+  width: 55%;
   color: white;
 }
 /*Styling of the Main content Section*/
 .mid-content{
-  width: 100%;
-  margin: 0 6rem;
+  width: 80%;
+  margin: 0 35%;
   text-align: left;
 }
 
@@ -195,13 +203,14 @@ img.image{
 }
 
 img.shape{
-  width: 145%;
+  width: 162%;
   height: auto;
-  margin: 2rem -3.5rem 0;
+  margin: 2rem -44% 0;
+
 }
 
 .shape+.shape{
-  margin-top: -30rem;
+  margin-top: -55rem;
 }
 
 .logo-lg{
@@ -242,11 +251,11 @@ img.shape{
 /*Styling of the side content section of the app*/
 .main-body-col-2{
   color: #ffffff;
-  margin-left: 60%;
-  width: 40%;
   height: 100%;
   background: #111111;
   position: fixed;
+  right:0px;
+  width: 550px;
 }
 
 .top-menubar{
@@ -262,6 +271,7 @@ img.shape{
 
 .side-content{
   margin: 0 3rem;
+  height: 100%;
 }
 #contact-form{
   display: flex;
@@ -270,10 +280,10 @@ img.shape{
 }
 
 .formElement{
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 2%;
+  border-radius: .75rem;
   width: 100%;
-  margin: 0.5rem;
+  margin: .5rem 0;
   background: #444444;
   color: #dddddd;
   outline: none;
@@ -284,17 +294,19 @@ img.shape{
 .contact-details{
   display: flex;
   flex-direction: row;
-  width: 103%;
-
-
+  width: 100%;
 }
+
+/*.contact-details>.formElement{*/
+/*  width:51%;*/
+/*}*/
 
 .email + .phone{
   margin-left: 1rem;
 }
 
 .message{
-  height: 15rem;
+  height: 6.5rem;
   resize: none;
 }
 
@@ -303,8 +315,10 @@ img.shape{
 }
 
 ._canvas{
-  margin-top: 1rem;
-  margin-left: -3rem;
+  height: 40%;
+  width: 1;
+  margin: 2% -3rem 0;
+  scroll-margin-block: unset;
 }
 
 .follow-theboxshoplifestyle{
@@ -337,7 +351,7 @@ img.shape{
   grid-row-gap: 4%;
   grid-column-gap: 2%;
   margin-top: 2%;
-  width: 130%;
+  width: 1;
 }
 
 .grid-item{
@@ -353,4 +367,130 @@ img.shape{
 
 ::-webkit-scrollbar-thumb {
   background: #46A16E;
+}
+
+@media(max-width: 1800px){
+  .mid-content{
+    margin: 0 30%;
+  }
+
+  img.image{
+    text-align: left;
+    width: 85%;
+    height: auto;
+  }
+
+  img.shape{
+    width: 160%;
+    height: auto;
+    margin: 2rem -19% 0;
+  }
+
+  .shape+.shape{
+    margin-top: -50rem;
+  }
+}
+
+@media(max-width: 1600px){
+
+  .shape+.shape{
+    margin-top: -30rem;
+  }
+
+}
+
+@media (max-width:1440px){
+  .main-body-col-2{
+    width: 500px;
+  }
+
+  .mid-content{
+    margin: 0 10%;
+  }
+
+  img.image{
+    text-align: left;
+    width: 85%;
+    height: auto;
+  }
+
+  img.shape{
+    width: 160%;
+    height: auto;
+    margin: 2rem -12.5% 0;
+  }
+
+  .shape+.shape{
+    margin-top: -25rem;
+  }
+
+  .gallery{
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media (max-width:1260px){
+  .main-body-col-1{
+    width: 70%;
+  }
+
+  .mid-content{
+    width: 70%;
+  }
+
+  img.image{
+    text-align: left;
+    width: 85%;
+    height: auto;
+  }
+
+  img.shape{
+    width: 160%;
+    height: auto;
+    margin: 2rem -14% 0;
+  }
+
+  .shape+.shape{
+    margin-top: -20rem;
+  }
+
+  .main-body-col-2{
+    width: 400px;
+  }
+
+  .gallery{
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width:1000px){
+
+  img.image{
+    text-align: left;
+    width: 85%;
+    height: auto;
+  }
+
+  img.shape{
+    width: 175%;
+    height: auto;
+    margin: 2rem -29% 0;
+  }
+
+  .shape+.shape{
+    margin-top: -1rem;
+  }
+
+  .gallery{
+    grid-template-columns: auto auto;
+  }
+}
+
+
+@media (max-width:400px){
+
+}
+
+@media (min-device-height:900px ){
+
 }

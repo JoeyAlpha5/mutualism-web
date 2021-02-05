@@ -49,12 +49,10 @@ function ContactForm(){
                 <textarea name="message" className="formElement message" id="message" form="contact-form">Enter text here...</textarea>
                 <button type="submit" form="contact-form" className="submit"><IoIosArrowRoundForward style={{fontSize:"2rem"}}/> Submit</button>
             </form>
-            <div className="mb-60">
-                <div className="_canvas">
-                    <iframe title="Mutualism Location" width="107%" height="350" id="location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12041.29829324266!2d28.028700246762575!3d-26.19995057185104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1612395369371!5m2!1sen!2sza"
-                            frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"/>
-                </div>
+            <div className="_canvas">
+                <iframe title="Mutualism Location" width="100%" height="100%" id="location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12041.29829324266!2d28.028700246762575!3d-26.19995057185104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1612395369371!5m2!1sen!2sza"
+                        frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"/>
             </div>
         </div>
     );

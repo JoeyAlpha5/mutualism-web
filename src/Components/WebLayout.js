@@ -13,10 +13,12 @@ function WebLayout(props) {
             return (
                 <div className="container">
                     <Sidebar/>
-                    <ContactMain/>
-                    <div className="main-body-col-2">
-                        <Menu/>
-                        <ContactSide/>
+                    <div className="content-area">
+                        <ContactMain/>
+                        <div className="main-body-col-2">
+                            <Menu/>
+                            <ContactSide/>
+                        </div>
                     </div>
                 </div>
             );
@@ -24,10 +26,12 @@ function WebLayout(props) {
             return (
                 <div className="container">
                     <Sidebar/>
-                    <AboutMain/>
-                    <div className="main-body-col-2">
-                        <Menu/>
-                        <AboutSide/>
+                    <div className="content-area">
+                        <AboutMain/>
+                        <div className="main-body-col-2">
+                            <Menu/>
+                            <AboutSide/>
+                        </div>
                     </div>
                 </div>
             );

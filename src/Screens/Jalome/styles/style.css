@@ -86,8 +86,7 @@ button:active{
     height: 150px;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 3%;
-    padding-top: 21px;
+    padding: 21px 3% 3%;
 }
 
 h5 {
@@ -201,9 +200,9 @@ h3{
     opacity: 70%;
 }
 
-.about-mid-content{
-    margin-left:65px;
-}
+/*.about-mid-content{*/
+/*    margin-left:65px;*/
+/*}*/
 
 .side-content p{
     font-size: 13px;
@@ -235,7 +234,6 @@ h3{
     .mid-content{
         margin-left: 80px;
         width: 280px;
-
     }
 
     #sidebar{
