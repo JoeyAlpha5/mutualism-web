@@ -6,7 +6,7 @@ import img001 from '../../images/Contact/ID127817476_318500945791669_91@2x.png';
 const Contact = ()=>{
     return(
         <div className="main-body-col-1">
-            <div className="mid-content">
+            <div className="mid-content about-mid-content">
                 <h1 className="home-heading contact-about-heading animate__animated animate__fadeInUp" style={{color: "#46A16E"}}>Contact Us.</h1>
                 <p className="body-text">
                     We’re empowering businesses through a new financing and <br/>
@@ -46,7 +46,7 @@ function ContactForm(){
                     <input type="tel" id="email" className="formElement phone" name="phone" placeholder="Phone*"/>
                 </div>
                 <input type="text" id="subject" className="formElement subject" name="subject" placeholder="Subject*" />
-                <textarea name="message" className="formElement message" id="message" form="contact-form">Enter text here...</textarea>
+                <textarea name="message" className="formElement message" id="message" form="contact-form"/>
                 <button type="submit" form="contact-form" className="submit"><IoIosArrowRoundForward style={{fontSize:"2rem"}}/> Submit</button>
             </form>
             <div className="_canvas">

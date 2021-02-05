@@ -7,8 +7,8 @@ function Menu(){
     return(
         <div className="top-menubar">
             <div className="top-menu-items">
-                <div className="mutualism-logo nav-item"><Link to="/home"><img src={logo} className="logo" alt="company logo"/></Link></div>
-                <div className="home-item nav-item"><Link to="/home">Home</Link></div>
+                <div className="mutualism-logo nav-item"><Link to="/"><img src={logo} className="logo" alt="company logo"/></Link></div>
+                <div className="home-item nav-item"><Link to="/">Home</Link></div>
                 <div className="about-item nav-item"><Link to="/about">About</Link></div>
                 <div className="contact-item nav-item"><Link to="/contact">Contact</Link></div>
                 <Account/>

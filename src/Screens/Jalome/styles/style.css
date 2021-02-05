@@ -243,13 +243,21 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 
 @media screen and (max-width:1000px){
 
+    .outter-container{
+        overflow-x: hidden;
+    }
+
+    .main-body-col-1, .main-body-col-2{
+        width: 100%;
+    }
+
     .popup-content{
         width: 90%;
         overflow-y: scroll !important;
         height: 90%;
     }
 
-    .mid-content.home-mid-content, .mid-content {
+    .mid-content.home-mid-content, .mid-content, .side-content, .mid-content.about-mid-content {
         margin-left: 160px;
     }
 
@@ -292,11 +300,15 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
     .space{
         height: 5rem;
     }
+
+    .content-area{
+        margin-left: unset;
+    }
 }
 
 
 @media (max-width:950px){
-    .mid-content.home-mid-content, .mid-content {
+    .mid-content.home-mid-content, .mid-content, .mid-content.about-mid-content,.side-content {
         margin-left: 130px;
     }
 
@@ -324,7 +336,7 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 }
 
 @media (max-width:480px){
-    .mid-content.home-mid-content, .mid-content {
+    .mid-content.home-mid-content, .mid-content, .mid-content.about-mid-content, .side-content {
         margin-left: 100px;
     }
 
@@ -357,7 +369,7 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 
 
 @media (max-width:380px){
-    .mid-content.home-mid-content, .mid-content {
+    .mid-content.home-mid-content, .mid-content, .mid-content.about-mid-content, .side-content {
         margin-left: 90px;
     }
 

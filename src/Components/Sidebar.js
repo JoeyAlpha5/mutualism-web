@@ -41,7 +41,7 @@ function Sidebar() {
                                 <li className="side-nav-item nav-item">Applications</li>
                             </div>
                             <div id="quick-contacts">
-                                <p>info@mutual.co.za</p>
+                                <p>info@mutualism.co.za</p>
                                 <p>+27 123 456 78</p>
                             </div>
                         </div>

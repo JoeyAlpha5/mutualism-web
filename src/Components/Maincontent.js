@@ -27,27 +27,27 @@ function Main(props){
                     </div>
 
                     <div className="modal-Text">
-                        <p class="modal-text-heading">Capital Investment</p>
+                        <p className="modal-text-heading">Capital Investment</p>
                         <p className="modal-text-info">
                             We provide capital in the form of assets essential to the business operation.<br/> 
                             These assets belong to Mutualism until the business can pay back the principal. <br/>
                             Once the assets are paid back, ownership of the assets are transferred to the<br/> investee.
                         </p>
 
-                        <p class="modal-text-heading">Empowering Ownership</p>
+                        <p className="modal-text-heading">Empowering Ownership</p>
                         <p className="modal-text-info">
                             Once the assets are paid back, ownership of the asset is transferred to the<br/> investee.
                             Mutualism’s model of “asset-backed investment” mitigates risk for<br/> our partners.
                         </p>
 
-                        <p class="modal-text-heading">Business Consulting</p>
+                        <p className="modal-text-heading">Business Consulting</p>
                         <p className="modal-text-info">
                             Our hands-on consulting ensures that we properly equip our partners with skills<br/>  for years of
                             success. We approach consulting through an integrated approach that<br/> addresses a business 
                             needs to drive sustainability, community engagement,<br/> product quality, marketing and sales.
                         </p>
 
-                        <p class="modal-text-heading">Continued Support</p>
+                        <p className="modal-text-heading">Continued Support</p>
                         <p className="modal-text-info">
                             Mutualism builds relationships with its partners to ensure long-term success.<br/> Our mission to
                             foster community growth guides our strategy. We provide ongoing<br/> support for partners to
