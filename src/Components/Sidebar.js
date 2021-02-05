@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
+import { Link } from "react-router-dom";
 import { IoChevronBackOutline, IoLogoLinkedin, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter} from 'react-icons/io5';
+import logolg from '../images/logo/mutualism_logo_large.png';
 import './ElementStyles/Hamburger.css';
 
 
@@ -17,7 +19,7 @@ function Sidebar() {
                         <span></span>
                     </div>
                 </div>
-                <div id="social-links">
+                <div id="social-links" className={isActive ? "icons-hidden" : "icons-shown"}>
                     <IoLogoLinkedin className="social-lnk nav-item"/>
                     <IoLogoFacebook className="social-lnk nav-item"/>
                     <IoLogoInstagram className="social-lnk nav-item"/>
@@ -30,7 +32,10 @@ function Sidebar() {
                     <div id="sidenav-options">
                         <div className="link-items">
                             <div className="side-nav">
-                                <li className="side-nav-item nav-item">Partners</li>
+                                <img src={logolg} width={100} className="mobile-logo mobile-link"/>
+                                <li className="side-nav-item nav-item mobile-link"><Link to="/home">Home</Link></li>
+                                <li className="side-nav-item nav-item mobile-link"><Link to="/about">About</Link></li>
+                                <li className="side-nav-item nav-item mobile-link"><Link to="/contact">Contact</Link></li>
                                 <li className="side-nav-item nav-item">Our Model</li>
                                 <li className="side-nav-item nav-item">Services</li>
                                 <li className="side-nav-item nav-item">Applications</li>

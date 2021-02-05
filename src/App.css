@@ -41,16 +41,18 @@
   }
 
   #menu-icon.hide{
-    visibility: hidden;
+    display: none;
   }
 
   #social-links{
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     visibility: visible;
-    margin-top: 525%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 40px;
   }
 
   .social-lnk{
@@ -161,8 +163,8 @@ h2.caption{
 p.body-text{
   padding: 0.5rem 0rem;
   width: 85%;
-  font-size: 1rem;
-  font-weight: lighter;
+  font-size: 15px;
+  opacity: 70%;
 }
 
 .logo{
@@ -203,8 +205,8 @@ img.shape{
 }
 
 .logo-lg{
-  width: 100%;
-  height: auto;
+  width: 200px;
+  margin-top: 42px;
 }
 
 /*.action-button{*/
@@ -339,4 +341,16 @@ img.shape{
 }
 
 .grid-item{
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #46A16E;
 }

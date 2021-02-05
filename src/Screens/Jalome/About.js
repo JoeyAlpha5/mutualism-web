@@ -6,19 +6,21 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import logolg from '../../images/logo/mutualism_logo_large.png';
 import {Link} from "react-router-dom";
 import Space from "../../Components/Jalome/Space";
+import Button from '../../Components/Jalome/Button';
+
 
 const About = ()=>{
     return(
         <div className="main-body-col-1">
-            <div className="mid-content">
-                <h1 className="caption animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>
+            <div className="mid-content about-mid-content">
+                <h1 className="home-heading animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>
                     Izandla <br/>
-                    Ziyagezana <br/>
+                    Ziyagezana
                 </h1>
                 <h2 className="caption animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>
                     “One hand washes another”
                 </h2>
-                <p className="body-text animate__animated animate__fadeInUp">
+                <p className="body-text">
                     This proverb reflects our business model in short: <br/>
                     “Give a man a fish, and you’ll feed him for a day. <br/>
                     Teach a man to fish, and you’ve fed him for a lifetime.” <br/>
@@ -30,7 +32,8 @@ const About = ()=>{
                 <div className="overlay-section-main">
                     <div className="overlay-section-elements">
                         <img src={graphic} className="graphic image animate__animated animate__fadeInUp" alt="graphic" />
-                        <p className="body-text animate__animated animate__fadeInUp">
+                        <br/><br/>
+                        <p className="body-text">
                             “Give a man a fish, and he’ll eat for a day. Teach a man <br/>
                             to fish, and he’ll eat for a lifetime. What they didn’t say is, <br/>
                             “And it would be nice if you gave him a damn fishing rod.” <br/>
@@ -40,7 +43,7 @@ const About = ()=>{
                             the physical asset to conduct and carry your own business. <br/>
                             We give you the fishing rod. <br/>
                         </p>
-                        <h1 className="caption">
+                        <h1 className="home-heading" style={{color:"white"}}>
                             Here To  <br/>
                             Help You  <br/>
                             Grow <br/>
@@ -55,13 +58,13 @@ const About = ()=>{
                             and small businesses. <br/>
                         </p>
                         <h2 className="caption">Applications coming soon.</h2>
-                        <button className=""><IoIosArrowRoundForward className="newsletter-arrow"/>Join Newsletter</button><br/>
+                        <Button text="Learn more"/>
                     </div>
                     <img src={pathA} className="graphic shape animate__animated animate__fadeInDown" alt="graphic shape"/>
                     <img src={pathB} className="graphic shape" alt="graphic shape"/>
                 </div>
                 <img src={logolg} className="graphic logo-lg" alt="mutualism logo"/>
-                <h1 className="caption" style={{color: "#46A16E"}}>Logo Explained</h1>
+                <h1 className="home-heading" style={{color: "#46A16E"}}>Logo Explained</h1>
                 <p className="body-text">
                     Our logo is a rhino and an oxpecker — this symbolizes the <br/>
                     symbiotic relationship of mutualism, where two different <br/>
@@ -89,22 +92,22 @@ function AboutInfo(){
                 and expertise in business strategy, finance, marketing, and <br/>
                 relationship-building to push our partners forward. <br/>
             </p>
-            <h3>Business Consulting</h3>
+            <h5>Business Consulting</h5>
             <p className="body-text">
                 We are a socially-minded financing firm designed to enhance <br/>
                 sustainable, locally owned businesses. <br/>
             </p>
-            <h3>Financing Opportunity</h3>
+            <h5>Financing Opportunity</h5>
             <p className="body-text">
                 We bridge the gap in funding  opportunities for Township-based <br/>
                 South Africans. <br/>
             </p>
-            <h3>Hands on Support</h3>
+            <h5>Hands on Support</h5>
             <p className="body-text">
                 We offer tailored support to offer guidance in areas of our partners’ <br/>
                 choosing. <br/>
             </p>
-            <Link to="/contact" className="nav-item" style={{fontSize:"2rem", fontWeight:"lighter"}}><IoIosArrowRoundForward class="newsletter-arrow"/>Get in touch</Link>
+            {/* <Link to="/contact" className="nav-item" style={{fontSize:"2rem", fontWeight:"lighter"}}><IoIosArrowRoundForward class="newsletter-arrow"/>Get in touch</Link> */}
         </div>
     );
 }

@@ -34,7 +34,6 @@ a:hover, a:focus{
     font-size:5rem;
     color: #46A16E;
     font-weight: bold;
-    margin-top: 40px;
 }
 
 .top{
@@ -60,9 +59,9 @@ button, button:focus {
     /*padding: 0.8rem;*/
     /*font-size: large;*/
     /*border: 0.5rem #ffffff;*/
-    box-shadow: 3px 3px 3px rgba(1,1,1,0.3);
+    /* box-shadow: 3px 3px 3px rgba(1,1,1,0.3); */
     text-align: center;
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
 }
 
 button:hover{
@@ -78,16 +77,22 @@ button:active{
 }
 
 .home-bottom {
-    width: 92%;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    background: hsl(0deg 0% 0% / 50%);
+    background: hsl(0deg 0% 0% / 41%);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    height: 25%;
+    height: 150px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 3%;
+    padding-top: 21px;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 18px;
 }
 
 .home-bottom::before {
@@ -135,4 +140,151 @@ li div {
 h3{
     color: #46A16E;
     font-weight: bold;
+}
+
+.icons-hidden{
+    display: none !important;
+}
+
+
+.mobile-link{
+    display: none;
+}
+
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff !important;
+    height: 600px !important;
+    border: 0px !important;
+    border-radius: 10px;
+    width: 600px;
+    color: black;
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-heading p {
+    color: #46A16E;
+    font-weight: bold;
+    margin: 0px 0px 0px 15px;
+}
+
+.modal-heading h4 {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.modal-heading{
+    border-left: 1px solid #46A16E;
+    margin: 20px 0px 0px 15px;
+}
+
+.modal-Text{
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.modal-text-heading{
+    /* font-weight: bold; */
+    margin-bottom: 0px;
+}
+
+.modal-text-info {
+    font-size: 13px;
+    margin-bottom: 25px;
+    margin-top: 6px;
+    line-height: 20px;
+    opacity: 70%;
+}
+
+.about-mid-content{
+    margin-left:65px;
+}
+
+.side-content p{
+    font-size: 13px;
+}
+
+@media screen and (max-width:1000px){
+
+    .popup-content{
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .mobile-link{
+        display: block;
+    }
+
+    .top-menubar{
+        display: none;
+    }
+
+    .home-heading{
+        font-size: 2.5rem;
+    }
+
+    .main{
+        background-image: none;
+    }
+
+    .mid-content{
+        margin-left: 80px;
+        width: 280px;
+
+    }
+
+    #sidebar{
+        background: #46A16E;
+    }
+
+    #main-homepage-content{
+        width: 80%;
+    }
+
+    #sidebar.collapsed {
+        width: 80px;
+    }
+    
+    .home-bottom{
+        display: none;
+    }
+
+    #minimize{
+        width: 80px;
+    }
+
+    .space{
+        height: 5rem;
+    }
+}
+
+
+@media (max-width:400px){
+    .home-heading{
+        font-size: 1.5rem;
+    }
+
+    .main_text{
+        width: 70%;
+    }
+
+    .space{
+        height: 5rem;
+    }
+
+    button{
+        width: 150px;
+        height: 45px;
+    }
+}
+
+@media (min-device-height:900px ){
+    .main_heading{
+        margin-top: 4%;
+    }
 }

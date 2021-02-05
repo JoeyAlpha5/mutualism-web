@@ -3,7 +3,7 @@ const HomeBottom = ()=>{
     return (
         <div className="home-bottom grid-container">
             <div className="grid-item">
-                <h3>Business Consulting</h3>
+                <h5>Business Consulting</h5>
                 <p className="body-text">
                     We are a socially-minded financing <br/>
                     firm designed to enhance sustainable, <br/>
@@ -11,7 +11,7 @@ const HomeBottom = ()=>{
                 </p>
             </div>
             <div className="grid-item">
-                <h3>Financing Opportunity</h3>
+                <h5>Financing Opportunity</h5>
                 <p className="body-text">
                     We bridge the gap in funding <br/>
                     opportunities for Township-based <br/>
@@ -19,7 +19,7 @@ const HomeBottom = ()=>{
                 </p>
             </div>
             <div className="grid-item">
-                <h3>Hands on Support</h3>
+                <h5>Hands on Support</h5>
                 <p className="body-text">
                     We offer tailored support to offer <br/>
                     guidance in areas of our partners’ <br/>
@@ -27,7 +27,7 @@ const HomeBottom = ()=>{
                 </p>
             </div>
             <div className="grid-item">
-                <h3>Meet Mutualism</h3>
+                <h5>Meet Mutualism</h5>
                 <p className="body-text">
                     We are a socially-minded financing <br/>
                     firm designed to enhance sustainable, <br/>
