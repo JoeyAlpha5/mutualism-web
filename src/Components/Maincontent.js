@@ -15,7 +15,7 @@ function Main(props){
                     Entrepreneurs.
                 </h1>
                 <p className="main_text animate__animated animate__fadeInUp">
-                    A new financing and consulting strategy bringing<br/> 
+                    A new financing and consulting strategy bringing<br className="desktop-break"/> 
                     power to the small business owners of South Africa. 
                 </p>
                 
@@ -29,22 +29,22 @@ function Main(props){
                     <div className="modal-Text">
                         <p className="modal-text-heading">Capital Investment</p>
                         <p className="modal-text-info">
-                            We provide capital in the form of assets essential to the business operation.<br/> 
-                            These assets belong to Mutualism until the business can pay back the principal. <br/>
-                            Once the assets are paid back, ownership of the assets are transferred to the<br/> investee.
+                            We provide capital in the form of assets essential to the business operation.<br className="desktop-break"/> 
+                            These assets belong to Mutualism until the business can pay back the principal. <br className="desktop-break"/>
+                            Once the assets are paid back, ownership of the assets are transferred to the<br className="desktop-break"/> investee.
                         </p>
 
                         <p className="modal-text-heading">Empowering Ownership</p>
                         <p className="modal-text-info">
-                            Once the assets are paid back, ownership of the asset is transferred to the<br/> investee.
-                            Mutualism’s model of “asset-backed investment” mitigates risk for<br/> our partners.
+                            Once the assets are paid back, ownership of the asset is transferred to the<br className="desktop-break"/> investee.
+                            Mutualism’s model of “asset-backed investment” mitigates risk for<br className="desktop-break"/> our partners.
                         </p>
 
                         <p className="modal-text-heading">Business Consulting</p>
                         <p className="modal-text-info">
-                            Our hands-on consulting ensures that we properly equip our partners with skills<br/>  for years of
-                            success. We approach consulting through an integrated approach that<br/> addresses a business 
-                            needs to drive sustainability, community engagement,<br/> product quality, marketing and sales.
+                            Our hands-on consulting ensures that we properly equip our partners with skills<br className="desktop-break"/>  for years of
+                            success. We approach consulting through an integrated approach that<br className="desktop-break"/> addresses a business 
+                            needs to drive sustainability, community engagement,<br className="desktop-break"/> product quality, marketing and sales.
                         </p>
 
                         <p className="modal-text-heading">Continued Support</p>
@@ -65,7 +65,7 @@ function Main(props){
                     Owners.
                 </h1>
                 <p className="main_text ">
-                    Providing for thousands of costumers across a Variety Of South African Cities.<br/>
+                    Providing for thousands of costumers across a Variety Of South African Cities.<br className="desktop-break"/>
                     Mutualism’s new model to launch and grow entrepreneurship in South Africa.
                 </p>
                 <ul className="">
@@ -83,11 +83,11 @@ function Main(props){
                     “One hand washes another”
                 </h3>
                 <p className="main_text ">
-                    This tagline adopts what epitomizes Mutualism in a form of an<br/>
-                    African proverb. This expresses the idea that mutual cooperation can<br/>
-                    help both parties. The campaign comms logo symbol will be mainly<br/>
-                    driven by an image of an oxpecker ,which metaphorically reflects a<br/>
-                    symbiotic relationship between an investor and a supported smme.<br/>
+                    This tagline adopts what epitomizes Mutualism in a form of an<br className="desktop-break"/>
+                    African proverb. This expresses the idea that mutual cooperation can<br className="desktop-break"/>
+                    help both parties. The campaign comms logo symbol will be mainly<br className="desktop-break"/>
+                    driven by an image of an oxpecker ,which metaphorically reflects a<br className="desktop-break"/>
+                    symbiotic relationship between an investor and a supported smme.<br className="desktop-break"/>
                 </p>
             </div>
             <HomeBottom/>

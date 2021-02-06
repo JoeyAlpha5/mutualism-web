@@ -9,26 +9,26 @@ const Contact = ()=>{
             <div className="mid-content about-mid-content">
                 <h1 className="home-heading contact-about-heading animate__animated animate__fadeInUp" style={{color: "#46A16E"}}>Contact Us.</h1>
                 <p className="body-text">
-                    We’re empowering businesses through a new financing and <br/>
-                    consulting strategy which brings successes to the small business <br/>
-                    owners of South Africa. <br/>
+                    We’re empowering businesses through a new financing and <br className="desktop-break"/>
+                    consulting strategy which brings successes to the small business <br className="desktop-break"/>
+                    owners of South Africa. <br className="desktop-break"/>
                 </p>
                 <p className="body-text">
-                    Discover what’s possible with community centered investment. <br/>
+                    Discover what’s possible with community centered investment. <br className="desktop-break"/>
                 </p>
                 <h3 className="animate__animated animate__fadeInUp">Come see us.</h3>
                 <div className="follow-theboxshoplifestyle animate__animated animate__fadeInUp">
                     <SiInstagram className="theboxshoplifestyle-instagram-label"/><div className="body-text theboxshoplifestyle-instagram-label">theboxshoplifestyle</div><div className="body-text theboxshoplifestyle-instagram">Follow</div>
                 </div>
                 <div className="gallery animate__animated animate__fadeInDown">
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
-                    <img src={img001} alt="gallery-item" className="grid-item" width="100%" height="auto"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
+                    <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
                 </div>
             </div>
         </div>

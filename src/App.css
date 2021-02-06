@@ -189,7 +189,7 @@ p.body-text{
 
 img.image{
   text-align: left;
-  width: 85%;
+  width: 50%;
   height: auto;
 }
 
@@ -320,7 +320,7 @@ img.shape{
 }
 
 .theboxshoplifestyle-instagram-label{
-  margin-right: 1rem;
+  margin-right: 15px;
   font-weight: lighter;
 }
 
@@ -336,16 +336,20 @@ img.shape{
   transform: scale(1.2);
 }
 
-.gallery{
+/* .gallery{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-row-gap: 4%;
   grid-column-gap: 2%;
   margin-top: 2%;
   width: 1;
-}
+} */
 
-.grid-item{
+.gallery img {
+  margin-right: 15px;
+  width: 29%;
+  margin-bottom: 4px;
+  margin-top: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -368,7 +372,7 @@ img.shape{
 
   img.image{
     text-align: left;
-    width: 85%;
+    width: 50%;
     height: auto;
   }
 
@@ -409,7 +413,7 @@ img.shape{
 
   img.image{
     text-align: left;
-    width: 85%;
+    width: 50%;
     height: auto;
   }
 
@@ -423,9 +427,9 @@ img.shape{
     margin-top: -25rem;
   }
 
-  .gallery{
+  /* .gallery{
     grid-template-columns: auto auto auto auto;
-  }
+  } */
 }
 
 
@@ -446,7 +450,7 @@ img.shape{
 
   img.image{
     text-align: left;
-    width: 85%;
+    width: 50%;
     height: auto;
   }
 
@@ -464,16 +468,16 @@ img.shape{
     width: 400px;
   }
 
-  .gallery{
+  /* .gallery{
     grid-template-columns: auto auto auto;
-  }
+  } */
 }
 
 @media screen and (max-width:1000px){
 
   img.image{
     text-align: left;
-    width: 85%;
+    width: 50%;
     height: auto;
   }
 
@@ -487,9 +491,9 @@ img.shape{
     margin-top: -1rem;
   }
 
-  .gallery{
+  /* .gallery{
     grid-template-columns: auto auto;
-  }
+  } */
 
   .content-area{
     flex-direction: column;
