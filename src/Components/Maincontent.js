@@ -22,7 +22,7 @@ function Main(props){
                 
                 <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal closeOnDocumentClick>
                     <div className="modal-heading">
-                        <p className="overlay-text">A new modal</p>
+                        <p className="overlay-text">A new model</p>
                         <h4>How We Help Businesses Thrive</h4>
                     </div>
 
