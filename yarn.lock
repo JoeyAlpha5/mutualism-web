@@ -718,7 +718,7 @@
 
 "@babel/plugin-transform-react-constant-elements@^7.12.1":
   version "7.12.13"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-constant-elements/-/plugin-transform-react-constant-elements-7.12.13.tgz#f8ee56888545d53d80f766b3cc1563ab2c241f92"
+  resolved "https://registry.npmjs.org/@babel/plugin-transform-react-constant-elements/-/plugin-transform-react-constant-elements-7.12.13.tgz"
   integrity sha512-qmzKVTn46Upvtxv8LQoQ8mTCdUC83AOVQIQm57e9oekLT5cmK9GOMOfcWhe8jMNx4UJXn/UDhVZ/7lGofVNeDQ==
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
@@ -1031,7 +1031,7 @@
 
 "@babel/preset-react@^7.12.5":
   version "7.12.13"
-  resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.12.13.tgz#5f911b2eb24277fa686820d5bd81cad9a0602a0a"
+  resolved "https://registry.npmjs.org/@babel/preset-react/-/preset-react-7.12.13.tgz"
   integrity sha512-TYM0V9z6Abb6dj1K7i5NrEhA13oS5ujUYQYDfqIBXYHOc2c2VkFgc+q9kyssIyUfy4/hEwqrgSlJ/Qgv8zJLsA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
@@ -1392,7 +1392,7 @@
 
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
+  resolved "https://registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz"
   integrity sha512-br5Qwvh8D2OQqSXpd1g/xqXKnK0r+Jz6qVKBbWmpUcrbGOxUrf39V5oZ1876084CGn18uMdR5uvPqBv9UqtBjQ==
   dependencies:
     ansi-html "^0.0.7"
@@ -1508,7 +1508,7 @@
 
 "@svgr/core@^5.5.0":
   version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@svgr/core/-/core-5.5.0.tgz#82e826b8715d71083120fe8f2492ec7d7874a579"
+  resolved "https://registry.npmjs.org/@svgr/core/-/core-5.5.0.tgz"
   integrity sha512-q52VOcsJPvV3jO1wkPtzTuKlvX7Y3xIcWRpCMtBF3MrteZJtBfQw/+u0B1BHy5ColpQc1/YVTrPEtSYIMNZlrQ==
   dependencies:
     "@svgr/plugin-jsx" "^5.5.0"
@@ -1534,7 +1534,7 @@
 
 "@svgr/plugin-svgo@^5.5.0":
   version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@svgr/plugin-svgo/-/plugin-svgo-5.5.0.tgz#02da55d85320549324e201c7b2e53bf431fcc246"
+  resolved "https://registry.npmjs.org/@svgr/plugin-svgo/-/plugin-svgo-5.5.0.tgz"
   integrity sha512-r5swKk46GuQl4RrVejVwpeeJaydoxkdwkM1mBKOgJLBUJPGaLci6ylg/IjhrRsREKDkr4kbMWdgOtbXEh0fyLQ==
   dependencies:
     cosmiconfig "^7.0.0"
@@ -1543,7 +1543,7 @@
 
 "@svgr/webpack@5.5.0":
   version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@svgr/webpack/-/webpack-5.5.0.tgz#aae858ee579f5fa8ce6c3166ef56c6a1b381b640"
+  resolved "https://registry.npmjs.org/@svgr/webpack/-/webpack-5.5.0.tgz"
   integrity sha512-DOBOK255wfQxguUta2INKkzPj6AIS6iafZYiYmHn6W3pHlycSRRlvWKCfLDG10fXfLWqE3DJHgRUOyJYmARa7g==
   dependencies:
     "@babel/core" "^7.12.3"
@@ -6711,7 +6711,7 @@ kleur@^3.0.3:
 
 klona@^2.0.4:
   version "2.0.4"
-  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
+  resolved "https://registry.npmjs.org/klona/-/klona-2.0.4.tgz"
   integrity sha512-ZRbnvdg/NxqzC7L9Uyqzf4psi1OM4Cuc+sJAkQPjO6XkQIJTNbfK2Rsmbw8fx1p2mkZdp2FZYo2+LwXYY/uwIA==
 
 language-subtag-registry@~0.3.2:
@@ -8868,7 +8868,7 @@ react-app-polyfill@^2.0.0:
 
 react-dev-utils@^11.0.2:
   version "11.0.2"
-  resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.2.tgz#98aed16ef50f808ee17b32def75eb15f89655802"
+  resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-11.0.2.tgz"
   integrity sha512-xG7GlMoYkrgc2M1kDCHKRywXMDbFnjOB+/VzpytQyYBusEzR8NlGTMmUbvN86k94yyKu5XReHB8eZC2JZrNchQ==
   dependencies:
     "@babel/code-frame" "7.10.4"
@@ -8961,7 +8961,7 @@ react-router@5.2.0:
 
 react-scripts@^4.0.2:
   version "4.0.2"
-  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-4.0.2.tgz#530fd934dfdf31c355e366df40bf488347c28de7"
+  resolved "https://registry.npmjs.org/react-scripts/-/react-scripts-4.0.2.tgz"
   integrity sha512-okaWNaGDGtnXyM2CLMUl8gYZnAubgxEulC40FYjsxn5bbj+G/mDINdy24wHz4Vypb/LWtIe8rdBU78k/74v8Mw==
   dependencies:
     "@babel/core" "7.12.3"
@@ -9518,7 +9518,7 @@ sanitize.css@^10.0.0:
 
 sass-loader@^10.0.5:
   version "10.1.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.1.1.tgz#4ddd5a3d7638e7949065dd6e9c7c04037f7e663d"
+  resolved "https://registry.npmjs.org/sass-loader/-/sass-loader-10.1.1.tgz"
   integrity sha512-W6gVDXAd5hR/WHsPicvZdjAWHBcEJ44UahgxcIE196fW2ong0ZHMPO1kZuI5q0VlvMQZh32gpv69PLWQm70qrw==
   dependencies:
     klona "^2.0.4"
