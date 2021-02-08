@@ -7,6 +7,7 @@ import logolg from '../../images/logo/mutualism_logo_large.png';
 import {Link} from "react-router-dom";
 import Space from "../../Components/Jalome/Space";
 import Button from '../../Components/Jalome/Button';
+import Popup from 'reactjs-popup';
 
 
 const About = ()=>{
@@ -60,7 +61,9 @@ const About = ()=>{
                         and small businesses. <br className="desktop-break"/>
                     </p>
                     <h2>Applications coming soon.</h2>
-                    <Button text="Learn more"/>
+                    <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal>
+                        <h4 className="applications-message">Applications coming soon.</h4>
+                    </Popup>
                 </div>
             </div>
             <div className="overlay-section-elements mid-content about-mid-content">

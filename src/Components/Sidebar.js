@@ -20,8 +20,8 @@ function Sidebar() {
                     </div>
                 </div>
                 <div id="social-links" className={isActive ? "icons-hidden" : "icons-shown"}>
-                    <IoLogoLinkedin className="social-lnk nav-item"/>
-                    <IoLogoFacebook className="social-lnk nav-item"/>
+                    <IoLogoLinkedin className="social-lnk nav-item" onClick={()=>window.open("https://www.linkedin.com/company/mutualismllc/")}/>
+                    <IoLogoFacebook className="social-lnk nav-item" onClick={()=>window.open("https://www.facebook.com/MutualismSA")}/>
                     <IoLogoInstagram className="social-lnk nav-item"/>
                     <IoLogoTwitter className="social-lnk nav-item"/>
                 </div>
@@ -36,13 +36,18 @@ function Sidebar() {
                                 <li className="side-nav-item nav-item mobile-link"><Link to="/home">Home</Link></li>
                                 <li className="side-nav-item nav-item mobile-link"><Link to="/about">About</Link></li>
                                 <li className="side-nav-item nav-item mobile-link"><Link to="/contact">Contact</Link></li>
-                                <li className="side-nav-item nav-item">Our Model</li>
+                                {/* <li className="side-nav-item nav-item">Our Model</li>
                                 <li className="side-nav-item nav-item">Services</li>
-                                <li className="side-nav-item nav-item">Applications</li>
+                                <li className="side-nav-item nav-item">Applications</li> */}
+                                <p>
+                                Mutualism is a South African financing firm dedicated to supporting entrepreneurs and<br className="desktop-break"/> small businesses through unrivaled financing rates alongside tailored partner consultation.
+                                </p>
                             </div>
                             <div id="quick-contacts">
-                                <p>info@mutualism.co.za</p>
-                                <p>+27 123 456 78</p>
+                                <br/>
+                                <p className="get-in-touch">get in touch</p>
+                                <p><a href="mailto:info@mutualism.co.za">info@mutualism.co.za</a></p>
+                                {/* <p>+27 123 456 78</p> */}
                             </div>
                         </div>
                     </div>

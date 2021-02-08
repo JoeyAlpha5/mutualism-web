@@ -44,6 +44,25 @@ a:hover, a:focus{
     font-size: 15px;
 }
 
+.side-nav p {
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+p.get-in-touch {
+    color: gray;
+    margin: 0px;
+    font-size: 13px;
+}
+
+.applications-message{
+    padding:20px;
+}
+
+.insta-follow{
+    cursor: pointer;
+}
+
 button, button:focus {
     width: 181px;
     height: 45px;
@@ -283,6 +302,10 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 
     #sidebar{
         background: #46A16E;
+    }
+
+    .side-nav p{
+        display: none;
     }
 
     #main-homepage-content{
