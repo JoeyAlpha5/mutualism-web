@@ -15,17 +15,17 @@ const Contact = ()=>{
         <div className="main-body-col-1">
             <div className="mid-content about-mid-content">
                 <h1 className="home-heading contact-about-heading animate__animated animate__fadeInUp" style={{color: "#46A16E"}}>Contact Us.</h1>
-                <p className="body-text">
+                <p className="body-text about_contact_p">
                     We’re empowering businesses through a new financing and <br className="desktop-break"/>
                     consulting strategy which brings successes to the small business <br className="desktop-break"/>
                     owners of South Africa. <br className="desktop-break"/>
                 </p>
-                <p className="body-text">
+                <p className="body-text about_contact_p">
                     Discover what’s possible with community centered investment. <br className="desktop-break"/>
                 </p>
                 <h3 className="animate__animated animate__fadeInUp">Come see us.</h3>
                 <div className="follow-theboxshoplifestyle animate__animated animate__fadeInUp">
-                    <SiInstagram className="theboxshoplifestyle-instagram-label"/><div className="body-text theboxshoplifestyle-instagram-label">theboxshoplifestyle</div><div className="body-text theboxshoplifestyle-instagram insta-follow" onClick={()=>window.open("https://www.instagram.com/theboxshoplifestyle/?hl=en")}>Follow</div>
+                    <SiInstagram className="theboxshoplifestyle-instagram-label"/><div className="body-text about_contact_p theboxshoplifestyle-instagram-label">theboxshoplifestyle</div><div className="body-text about_contact_p theboxshoplifestyle-instagram insta-follow" onClick={()=>window.open("https://www.instagram.com/theboxshoplifestyle/?hl=en")}>Follow</div>
                 </div>
                 <div className="gallery animate__animated animate__fadeInDown">
                     <img src={img001} alt="gallery-item" className=".col-12 .col-md-6 .col-lg-4"/>
