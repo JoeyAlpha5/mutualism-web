@@ -4,6 +4,8 @@ import {IoIosArrowRoundForward} from "react-icons/io";
 import Popup from 'reactjs-popup';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from 'emailjs-com';
+// init("user_uORlriQ29CU6yAQeCL11S");
 import Loader from 'react-loader-spinner';
 import img001 from '../../images/Contact/1.png';
 import img002 from '../../images/Contact/2.png';
@@ -87,8 +89,28 @@ function ContactForm(){
             setOverText("Please confirm you're not a robot");
         }else{
             setOverText("");
+            emailjs.sendForm('service_3kqkehw', 'template_9zak0xy', e.target, 'user_uORlriQ29CU6yAQeCL11S')
+            .then((result) => {
+                // console.log(result.text);
+                setOverText("Message sent, the team will be in touch soon.");
+                clearForm();
+            }, (error) => {
+                // console.log(error.text);
+                setOverText("Unable to send message, please try again.");
+
+            });
         }
 
+    }
+
+    const clearForm = ()=>{
+        setName("");
+        setLastName("");
+        setPhone("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        setFormValid("");
     }
 
     // update recaptcha
