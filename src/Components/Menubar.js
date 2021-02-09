@@ -11,7 +11,7 @@ function Menu(){
                 <div className="home-item nav-item"><Link to="/">Home</Link></div>
                 <div className="about-item nav-item"><Link to="/about">About</Link></div>
                 <div className="contact-item nav-item"><Link to="/contact">Contact</Link></div>
-                <Account/>
+                {/* <Account/> */}
             </div>
         </div>
     );

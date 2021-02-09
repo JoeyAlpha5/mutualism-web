@@ -1,7 +1,7 @@
 import './App.css';
 import './Screens/Jalome/styles/style.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
