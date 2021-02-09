@@ -10,10 +10,12 @@ function ContactForm(){
         <div className="side-content">
             <form action="" id="contact-form">
                 <input type="text" id="fullName" className="formElement fullName" name="fullName" placeholder="Full name*" />
-                <div className="contact-details">
+                {/* <div className="contact-details">
                     <input type="email" id="email" className="formElement email" name="email" placeholder="Email*"/>
                     <input type="tel" id="email" className="formElement phone" name="phone" placeholder="Phone*"/>
-                </div>
+                </div> */}
+                <input type="email" id="email" className="formElement email" name="email" placeholder="Email*"/>
+                <input type="tel" id="email" className="formElement phone" name="phone" placeholder="Phone*"/>
                 <input type="text" id="subject" className="formElement subject" name="subject" placeholder="Subject*" />
                 <textarea name="message" className="formElement message" id="message" form="contact-form">Enter text here...</textarea>
                 <button type="submit" form="contact-form" className="newsletter submit"><IoIosArrowRoundForward classname='newsletter-arrow'/> Submit</button>

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { Link } from "react-router-dom";
-import { IoChevronBackOutline, IoLogoLinkedin, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter} from 'react-icons/io5';
+import { IoChevronBackOutline, IoLogoLinkedin, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoMail} from 'react-icons/io5';
 import logolg from '../images/logo/mutualism_logo_large.png';
 import './ElementStyles/Hamburger.css';
 
@@ -22,8 +22,9 @@ function Sidebar() {
                 <div id="social-links" className={isActive ? "icons-hidden" : "icons-shown"}>
                     <IoLogoLinkedin className="social-lnk nav-item" onClick={()=>window.open("https://www.linkedin.com/company/mutualismllc/")}/>
                     <IoLogoFacebook className="social-lnk nav-item" onClick={()=>window.open("https://www.facebook.com/MutualismSA")}/>
-                    <IoLogoInstagram className="social-lnk nav-item"/>
-                    <IoLogoTwitter className="social-lnk nav-item"/>
+                    <a href="mailto:info@mutualism.co.za"><IoMail className="social-lnk nav-item" /></a>
+                    {/* <IoLogoInstagram className="social-lnk nav-item"/>
+                    <IoLogoTwitter className="social-lnk nav-item"/> */}
                 </div>
                 <div id="sidebar-elements" className={isActive ? "" : "hide"} >
                     <div id="minimize" onClick={handleToggle}>

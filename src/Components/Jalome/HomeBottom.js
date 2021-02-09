@@ -27,11 +27,12 @@ const HomeBottom = ()=>{
                 </p>
             </div>
             <div className="grid-item">
-                <h5>Meet Mutualism</h5>
+                <h5>Empowering Ownership</h5>
                 <p className="body-text">
-                    We are a socially-minded financing <br/>
-                    firm designed to enhance sustainable, <br/>
-                    locally owned businesses. <br/>
+                    Once the assets are paid back, ownership<br/>
+                    of the asset is transferred to the investee.<br/>
+                    Our model mitigates risk for our partners.
+                    
                 </p>
             </div>
         </div>

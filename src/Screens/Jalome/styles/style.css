@@ -63,6 +63,12 @@ p.get-in-touch {
     cursor: pointer;
 }
 
+.disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 button, button:focus {
     width: 181px;
     height: 45px;

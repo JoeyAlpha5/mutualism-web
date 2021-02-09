@@ -177,8 +177,9 @@ p.body-text{
 
 .logo{
   margin-top: -1rem;
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
   margin-left: -0.5rem;
+  height: 45px;
 }
 
 .overlay-section-main{
@@ -292,9 +293,9 @@ img.shape{
 /*  width:51%;*/
 /*}*/
 
-.email + .phone{
+/* .email + .phone{
   margin-left: 1rem;
-}
+} */
 
 .message{
   height: 6.5rem;
@@ -305,9 +306,13 @@ img.shape{
   margin: 0.5rem;
 }
 
+.form-submission-loader-content {
+  padding: 50px;
+}
+
 ._canvas{
-  height: 40%;
-  width: 1;
+  height: 250px;
+  width: 99%;
   margin: 2% -3rem 0;
   scroll-margin-block: unset;
 }
