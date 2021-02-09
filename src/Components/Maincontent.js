@@ -4,6 +4,8 @@ import HomeBottom  from '../Components/Jalome/HomeBottom';
 import Popup from 'reactjs-popup';
 import Space from '../Components/Jalome/Space';
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
+
 
 function Main(props){
     return(
@@ -22,12 +24,12 @@ function Main(props){
                 
                 <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal closeOnDocumentClick>
                     <div className="modal-heading">
-                        <p className="overlay-text">A new model</p>
-                        <h4>How We Help Businesses Thrive</h4>
+                        <p className="overlay-text">our model</p>
+                        <h4>A New Model.</h4>
                     </div>
 
                     <div className="modal-Text">
-                        <p className="modal-text-heading">Capital Investment</p>
+                        <p className="modal-text-heading">Asset-Backed Investing</p>
                         <p className="modal-text-info">
                             We provide capital in the form of assets essential to the business operation.<br className="desktop-break"/> 
                             These assets belong to Mutualism until the business can pay back the principal. <br className="desktop-break"/>
@@ -36,8 +38,8 @@ function Main(props){
 
                         <p className="modal-text-heading">Empowering Ownership</p>
                         <p className="modal-text-info">
-                            Once the assets are paid back, ownership of the asset is transferred to the<br className="desktop-break"/> investee.
-                            Mutualism’s model of “asset-backed investment” mitigates risk for<br className="desktop-break"/> our partners.
+                            Entrepreneurs keep all equity in their company. Our model mitigates<br className="desktop-break"/> 
+                            risk to entrepreneurs and empowers local ownership
                         </p>
 
                         <p className="modal-text-heading">Business Consulting</p>
@@ -82,13 +84,14 @@ function Main(props){
                 <h3 className="">
                     “One hand washes another”
                 </h3>
-                <p className="main_text ">
+                <Link to="/about"><button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button></Link>
+                {/* <p className="main_text ">
                     This tagline adopts what epitomizes Mutualism in a form of an<br className="desktop-break"/>
                     African proverb. This expresses the idea that mutual cooperation can<br className="desktop-break"/>
                     help both parties. The campaign comms logo symbol will be mainly<br className="desktop-break"/>
                     driven by an image of an oxpecker ,which metaphorically reflects a<br className="desktop-break"/>
                     symbiotic relationship between an investor and a supported smme.<br className="desktop-break"/>
-                </p>
+                </p> */}
             </div>
             <HomeBottom/>
         </div>
