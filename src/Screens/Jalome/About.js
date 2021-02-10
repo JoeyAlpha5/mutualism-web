@@ -35,7 +35,7 @@ const About = ()=>{
                     partnership is a mutually beneficial relationship built <br className="desktop-break"/>
                     on mutual respect. Izandla Ziyagezana – One hand washes <br className="desktop-break"/>
                     another. A successful partnership requires dedication on <br className="desktop-break"/>
-                    both sides and wewill be as dedicated to your business as <br className="desktop-break"/>
+                    both sides and we will be as dedicated to your business as <br className="desktop-break"/>
                     we are to our own. <br className="desktop-break"/>
                 </p>
             </div>
@@ -152,34 +152,34 @@ function AboutInfo(){
     return(
         <div className="side-content">
             <p className="body-text about_contact_p">
-                Mutualism was founded to appease the many social and <br className="desktop-break"/>
-                economic issues that have become so prevalent in <br className="desktop-break"/>
-                South Africa due to the recent atrocities of Apartheid. <br className="desktop-break"/>
-                Unfortunately, the repercussions of Apartheid are very <br className="desktop-break"/>
-                much prevalent today; South Africa has deeply rooted <br className="desktop-break"/>
-                issues with wealth disparity, cyclical poverty, and an <br className="desktop-break"/>
+                Mutualism was founded to appease the many social and 
+                economic issues that have become so prevalent in 
+                South Africa due to the recent atrocities of Apartheid. 
+                Unfortunately, the repercussions of Apartheid are very 
+                much prevalent today; South Africa has deeply rooted 
+                issues with wealth disparity, cyclical poverty, and an 
                 unequal financing system. <br/>
             </p>
             <p className="body-text about_contact_p">
-                Our team works collaboratively to ensure that our business <br className="desktop-break"/>
-                partners are successful. We combine a variety of experience <br className="desktop-break"/>
-                and expertise in business strategy, finance, marketing, and <br className="desktop-break"/>
-                relationship-building to push our partners forward. <br className="desktop-break"/>
+                Our team works collaboratively to ensure that our business 
+                partners are successful. We combine a variety of experience 
+                and expertise in business strategy, finance, marketing, and 
+                relationship-building to push our partners forward. 
             </p>
             <h5>Business Consulting</h5>
             <p className="body-text about_contact_p">
-                We are a socially-minded financing firm designed to enhance <br className="desktop-break"/>
-                sustainable, locally owned businesses. <br className="desktop-break"/>
+                We are a socially-minded financing firm designed to enhance 
+                sustainable, locally owned businesses. 
             </p>
             <h5>Financing Opportunity</h5>
             <p className="body-text about_contact_p">
-                We bridge the gap in funding  opportunities for Township-based <br className="desktop-break"/>
-                South Africans. <br className="desktop-break"/>
+                We bridge the gap in funding  opportunities for Township-based 
+                South Africans. 
             </p>
             <h5>Hands on Support</h5>
             <p className="body-text about_contact_p">
-                We offer tailored support to offer guidance in areas of our partners’ <br className="desktop-break"/>
-                choosing. <br className="desktop-break"/>
+                We offer tailored support to offer guidance in areas of our partners’ 
+                choosing. 
             </p>
             {/* <Link to="/contact" className="nav-item" style={{fontSize:"2rem", fontWeight:"lighter"}}><IoIosArrowRoundForward class="newsletter-arrow"/>Get in touch</Link> */}
         </div>
