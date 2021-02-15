@@ -483,6 +483,9 @@ img.shape{
 }
 
 @media screen and (max-width:1000px){
+  ._canvas{
+    margin: unset;
+  }
 
   img.image{
     text-align: left;

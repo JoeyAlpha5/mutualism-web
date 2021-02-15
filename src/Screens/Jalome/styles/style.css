@@ -293,6 +293,11 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
 
 @media screen and (max-width:1000px){
 
+    li div{
+        background: unset;
+        color: white;
+    }
+
     br.desktop-break {
         display: none;
     }
@@ -418,8 +423,8 @@ h1.home-heading.contact-about-heading.here-to-help-you-grow {
     }
 
     button{
-        width: 150px;
-        height: 45px;
+        width: auto;
+        height: auto;
     }
 
 

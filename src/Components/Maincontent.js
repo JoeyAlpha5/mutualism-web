@@ -23,38 +23,47 @@ function Main(props){
                 
                 
                 <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal closeOnDocumentClick>
-                    <div className="modal-heading">
+                    {/* <div className="modal-heading">
                         <p className="overlay-text">our model</p>
                         <h4>A New Model.</h4>
-                    </div>
+                    </div> */}
 
                     <div className="modal-Text">
-                        <p className="modal-text-heading">Asset-Backed Investing</p>
-                        <p className="modal-text-info">
-                            We provide capital in the form of assets essential to the business operation.<br className="desktop-break"/> 
-                            These assets belong to Mutualism until the business can pay back the principal. <br className="desktop-break"/>
-                            Once the assets are paid back, ownership of the assets are transferred to the<br className="desktop-break"/> investee.
-                        </p>
+                    <p className="modal-text-heading">What We Do:</p>
+                            <p className="modal-text-info">
+                                Mutualism specializes in the development of Township SMMEs through financing<br className="desktop-break"/>
+                                and consulting services. We keep ownership local so that money circulates within<br className="desktop-break"/>
+                                the township economy and the community develops sustainably. Our hands-on <br className="desktop-break"/>
+                                consulting services are used to help the business find consistent and <br className="desktop-break"/>
+                                long-lasting growth.<br className="desktop-break"/>
+                            </p>
 
-                        <p className="modal-text-heading">Empowering Ownership</p>
-                        <p className="modal-text-info">
-                            Entrepreneurs keep all equity in their company. Our model mitigates<br className="desktop-break"/> 
-                            risk to entrepreneurs and empowers local ownership
-                        </p>
+                            <p className="modal-text-heading">Why We Do:</p>
+                            <p className="modal-text-info">
+                                Townships (or Kasi’s) are communities that are the result of racial atrocities from<br className="desktop-break"/>
+                                colonial rule and apartheid. South Africa still has deeply engrained systemic flaws.<br className="desktop-break"/>
+                                The broken financing system has left the Township entrepreneur and business <br className="desktop-break"/>
+                                unsupported. We help support these entrepreneurs because we at mutualism hold <br className="desktop-break"/>
+                                the firm belief that great ideas and people are everywhere.<br className="desktop-break"/>
+                            </p>
 
-                        <p className="modal-text-heading">Business Consulting</p>
-                        <p className="modal-text-info">
-                            Our hands-on consulting ensures that we properly equip our partners with skills<br className="desktop-break"/>  for years of
-                            success. We approach consulting through an integrated approach that<br className="desktop-break"/> addresses a business 
-                            needs to drive sustainability, community engagement,<br className="desktop-break"/> product quality, marketing and sales.
-                        </p>
+                            <p className="modal-text-heading">How We Do It:</p>
+                            <p className="modal-text-info">
+                                We support through a unique investing strategy called “Asset-Backed Investing”. <br className="desktop-break"/>
+                                We provide essential assets for our partners to use as a steppingstone for success.<br className="desktop-break"/>
+                                The asset we provide will be paid in monthly installments over a tailored period <br className="desktop-break"/>
+                                of time. After the repayment period, the entrepreneur owns the asset and 100% of <br className="desktop-break"/>
+                                their company. We then offer our consulting services to help keep growth <br className="desktop-break"/>
+                                consistent.<br className="desktop-break"/>
+                            </p>
 
-                        <p className="modal-text-heading">Continued Support</p>
-                        <p className="modal-text-info">
-                            Mutualism builds relationships with its partners to ensure long-term success.<br/> Our mission to
-                            foster community growth guides our strategy. We provide ongoing<br/> support for partners to
-                            improve business operations and efficiency.
-                        </p>
+                            <p className="modal-text-heading">How You Can Get Involved:</p>
+                            <p className="modal-text-info">
+                                We are always looking for great ideas and great people. Tell your friends about <br className="desktop-break"/>
+                                Mutualism and shop at your local small businesses. If you are an entrepreneur, <br className="desktop-break"/>
+                                join our newsletter and look out for the next round of funding. We look forward <br className="desktop-break"/>
+                                to hearing from you.<br className="desktop-break"/>
+                            </p>
                     </div>
 
                 </Popup>
@@ -67,7 +76,7 @@ function Main(props){
                     Owners.
                 </h1>
                 <p className="main_text ">
-                    Providing for thousands of costumers across a Variety Of South African Cities.<br className="desktop-break"/>
+                    Providing for costumers across a Variety Of South African Cities. <br className="desktop-break"/>
                     Mutualism’s new model to launch and grow entrepreneurship in South Africa.
                 </p>
                 <ul className="">

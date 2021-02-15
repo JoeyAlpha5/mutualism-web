@@ -131,8 +131,8 @@ const About = ()=>{
                 <p className="body-text about_contact_p">
                     The rhino and the oxpecker symbolize the symbiotic relationship <br className="desktop-break"/>
                     of Mutualism —two parties coming together for the benefit of each<br className="desktop-break"/>
-                    other. We strive to use an innovative financing model to support<br className="desktop-break"/>
-                    people without access to traditional funding. Two unlikely partners<br className="desktop-break"/>
+                    other. We strive to use an innovative financing model to support <br className="desktop-break"/>
+                    people without access to traditional funding. Two unlikely partners <br className="desktop-break"/>
                     forming a strong relationship and supporting each other. <br className="desktop-break"/>
                 </p>
                 <h2 className="caption" style={{color: "#46A16E"}}>
@@ -140,7 +140,7 @@ const About = ()=>{
                 </h2>
                 <p className="body-text about_contact_p">
                     At Mutualism, we strive to be the teacher as well as the fishing<br className="desktop-break"/>
-                    rod. We aim to help guide our entrepreneurs in their journeys, while<br className="desktop-break"/>
+                    rod. We aim to help guide our entrepreneurs in their journeys, while <br className="desktop-break"/>
                     providing the necessary resources for them to be successful. <br className="desktop-break"/>
                 </p>
                 <Space/>

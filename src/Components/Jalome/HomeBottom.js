@@ -5,34 +5,25 @@ const HomeBottom = ()=>{
             <div className="grid-item">
                 <h5>Business Consulting</h5>
                 <p className="body-text">
-                    We are a socially-minded financing <br/>
-                    firm designed to enhance sustainable, <br/>
-                    locally owned businesses. <br/>
+                    We use our resources to guide and educate<br/> entrepreneurs on how to optimize their<br/> businesses
                 </p>
             </div>
             <div className="grid-item">
                 <h5>Financing Opportunity</h5>
                 <p className="body-text">
-                    We bridge the gap in funding <br/>
-                    opportunities for Township-based <br/>
-                    South Africans. <br/>
+                    We provide financing for those <br/>without traditional access to<br/> funding.
                 </p>
             </div>
             <div className="grid-item">
                 <h5>Hands on Support</h5>
                 <p className="body-text">
-                    We offer tailored support to offer <br/>
-                    guidance in areas of our partners’ <br/>
-                    choosing. <br/>
+                    We take the time to visit our entrepreneurs<br/> and learn their businesses as if they were<br/> our own.
                 </p>
             </div>
             <div className="grid-item">
                 <h5>Empowering Ownership</h5>
                 <p className="body-text">
-                    Once the assets are paid back, ownership<br/>
-                    of the asset is transferred to the investee.<br/>
-                    Our model mitigates risk for our partners.
-                    
+                The Mutualism financing model mitigates<br/> risk for entrepreneurs and empowers local<br/> ownership. 
                 </p>
             </div>
         </div>
