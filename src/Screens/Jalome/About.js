@@ -76,41 +76,13 @@ const About = ()=>{
                     <h2>Applications coming soon.</h2>
                     <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal>
                         <div className="modal-Text">
-                            <p className="modal-text-heading">What We Do:</p>
-                            <p className="modal-text-info">
-                                Mutualism specializes in the development of Township SMMEs through financing<br className="desktop-break"/>
-                                and consulting services. We keep ownership local so that money circulates within<br className="desktop-break"/>
-                                the township economy and the community develops sustainably. Our hands-on <br className="desktop-break"/>
-                                consulting services are used to help the business find consistent and <br className="desktop-break"/>
-                                long-lasting growth.<br className="desktop-break"/>
-                            </p>
-
-                            <p className="modal-text-heading">Why We Do:</p>
-                            <p className="modal-text-info">
-                                Townships (or Kasi’s) are communities that are the result of racial atrocities from<br className="desktop-break"/>
-                                colonial rule and apartheid. South Africa still has deeply engrained systemic flaws.<br className="desktop-break"/>
-                                The broken financing system has left the Township entrepreneur and business <br className="desktop-break"/>
-                                unsupported. We help support these entrepreneurs because we at mutualism hold <br className="desktop-break"/>
-                                the firm belief that great ideas and people are everywhere.<br className="desktop-break"/>
-                            </p>
-
-                            <p className="modal-text-heading">How We Do It:</p>
-                            <p className="modal-text-info">
-                                We support through a unique investing strategy called “Asset-Backed Investing”. <br className="desktop-break"/>
-                                We provide essential assets for our partners to use as a steppingstone for success.<br className="desktop-break"/>
-                                The asset we provide will be paid in monthly installments over a tailored period<br className="desktop-break"/>
-                                of time. After the repayment period, the entrepreneur owns the asset and 100% of<br className="desktop-break"/>
-                                their company. We then offer our consulting services to help keep growth <br className="desktop-break"/>
-                                consistent.<br className="desktop-break"/>
-                            </p>
-
-                            <p className="modal-text-heading">How You Can Get Involved:</p>
-                            <p className="modal-text-info">
-                                We are always looking for great ideas and great people. Tell your friends about<br className="desktop-break"/>
-                                Mutualism and shop at your local small businesses. If you are an entrepreneur,<br className="desktop-break"/>
-                                join our newsletter and look out for the next round of funding. We look forward<br className="desktop-break"/>
-                                to hearing from you.<br className="desktop-break"/>
-                            </p>
+                            <p className="modal-text-heading">Join our mailing list:</p>
+                            <form action="" id="" onSubmit="">
+                                <input type="email" name="email" id="newsletter-email" className="formElement" placeholder="Email Address"/>
+                                <input type="email" name="confirmEmail" id="newsletter-email" className="formElement" placeholder="Confirm Email Address"/>
+                                <input type="submit" value="Submit" className="action-button" /><br/>
+                                <br/>
+                            </form>
                         </div>
                     </Popup>
                 </div>
