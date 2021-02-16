@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo/Transparent.svg';
+import logo from '../images/logo/mutualism-logo-white-no-text.svg';
 import Account from './Account';
 import { Link } from "react-router-dom";
 

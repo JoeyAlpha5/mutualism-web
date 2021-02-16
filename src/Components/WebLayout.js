@@ -11,26 +11,30 @@ function WebLayout(props) {
         console.log(props.page);
         if(props.page === "contact"){
             return (
-                <div className="container">
-                    <Sidebar/>
-                    <div className="content-area">
-                        <ContactMain/>
-                        <div className="main-body-col-2">
-                            <Menu/>
-                            <ContactSide/>
+                <div className="shader">
+                    <div className="container">
+                        <Sidebar/>
+                        <div className="content-area">
+                            <ContactMain/>
+                            <div className="main-body-col-2">
+                                <Menu/>
+                                <ContactSide/>
+                            </div>
                         </div>
                     </div>
                 </div>
             );
         }else if(props.page === "about"){
             return (
-                <div className="container">
-                    <Sidebar/>
-                    <div className="content-area">
-                        <AboutMain/>
-                        <div className="main-body-col-2">
-                            <Menu/>
-                            <AboutSide/>
+                <div className="shader">
+                    <div className="container">
+                        <Sidebar/>
+                        <div className="content-area">
+                            <AboutMain/>
+                            <div className="main-body-col-2">
+                                <Menu/>
+                                <AboutSide/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,7 +45,10 @@ function WebLayout(props) {
     }
 
     return (
-        <div>
+        <div className={
+            (props.page === "about" || props.page === "contact")
+                ? "background-img" : ""
+        }>
             {renderContent()}
         </div>
     );

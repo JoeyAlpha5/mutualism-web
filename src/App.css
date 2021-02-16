@@ -9,6 +9,24 @@
   display: flex;
 }
 
+.background-img{
+  background-image: url("./Screens/Jalome/assets/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  /*position: absolute;*/
+}
+
+/*.container.background-img.contact{*/
+/*  background-image: url("./Screens/Jalome/assets/bg.jpg");*/
+/*  background-size: cover;*/
+/*}*/
+
+.shader{
+  background: rgba(0,0,0,0.58);
+}
+
 /*Styling for the sidebar*/
   #sidebar{
     position: fixed;
@@ -146,7 +164,7 @@
   /*Shared styling for the main body components of the app*/
 .main-body-col-1{
   margin-top: 3rem;
-  width: 65%;
+  width: 63.5%;
   color: white;
 }
 /*Styling of the Main content Section*/
@@ -248,7 +266,7 @@ img.shape{
 .main-body-col-2{
   color: #ffffff;
   height: 100%;
-  background: #111111;
+  background: rgba(17,17,17,.85);
   position: fixed;
   right:0px;
   width: 35%;
@@ -394,6 +412,11 @@ img.shape{
   .shape+.shape{
     margin-top: -50rem;
   }
+
+  .main-body-col-1{
+    width: 63.5%;
+  }
+
 }
 /* 
 @media(max-width: 1600px){
@@ -408,6 +431,10 @@ img.shape{
 @media (max-width:1600px){
   .shape+.shape {
     margin-top: -38rem;
+  }
+
+  .main-body-col-1{
+    width: 63%;
   }
 }
 
@@ -436,9 +463,15 @@ img.shape{
     margin-top: -25rem;
   }
 
-  /* .gallery{
-    grid-template-columns: auto auto auto auto;
-  } */
+  .main-body-col-1{
+    width: 63.5%;
+  }
+}
+
+@media (max-width: 1366px){
+  .main-body-col-1{
+    width: 61.5%;
+  }
 }
 
 
@@ -446,11 +479,15 @@ img.shape{
   .mid-content.about-mid-content{
     margin-left: 60px;
   }
+
+  .main-body-col-1{
+    width: 58.5%;
+  }
 }
 
 @media (max-width:1260px){
   .main-body-col-1{
-    width: 70%;
+    width: 66%;
   }
 
   .mid-content{
@@ -482,6 +519,18 @@ img.shape{
   } */
 }
 
+@media (max-width: 1080px){
+  .main-body-col-1{
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-body-col-1{
+    width: 58%;
+  }
+}
+
 @media screen and (max-width:1000px){
   ._canvas{
     margin: unset;
@@ -503,6 +552,19 @@ img.shape{
     margin-top: -1rem;
   }
 
+  .background-img.about{
+    background: #111111;
+  }
+
+  .background-img.contact{
+    background: #111111;
+  }
+
+  .shader{
+    width: 100%;
+    background: #000000;
+  }
+
   /* .gallery{
     grid-template-columns: auto auto;
   } */
@@ -513,6 +575,7 @@ img.shape{
 
   .main-body-col-2{
     position: unset;
+    background: #111111;
   }
 
   .main-body-col-1, .main-body-col-2{
