@@ -234,17 +234,31 @@ img.shape{
 
 /*.action-button{*/
 /*  !*margin: 2rem 0;*!*/
-/*  background-color: white;*/
+/*  background-color: #46A16E;*/
 /*  !*border-radius: 2.5rem;*!*/
 /*  cursor:pointer;*/
 /*  !*width: 35%;*!*/
 /*  !*padding: 0.8rem;*!*/
 /*  !*font-size: large;*!*/
 /*  !*border: 0.5rem #ffffff;*!*/
-/*  box-shadow: 3px 3px 3px rgba(1,1,1,0.3);*/
+/*  !*box-shadow: 3px 3px 3px rgba(1,1,1,0.3);*!*/
 /*  text-align: center;*/
 /*  transition: color 0.3s;*/
 /*}*/
+
+.action-button:disabled{
+  background: #dddddd;
+}
+
+.action-button:enabled{
+  background: #46A16E;
+  transition: color 0.3s;
+}
+
+.action-button:enabled:hover{
+  background: black;
+  color: white;
+}
 
 /*.action-button:hover{*/
 /*  background: black;*/
@@ -298,8 +312,9 @@ img.shape{
   border-radius: .75rem;
   width: 100%;
   margin: .5rem 0;
-  background: #444444;
-  color: #dddddd;
+  /* background: #444444; */
+  background: rgb(68 68 68 / 14%);
+  color: #000;
   outline: none;
   box-shadow: none;
   border: none;
@@ -335,7 +350,7 @@ img.shape{
 ._canvas{
   height: 250px;
   width: 99%;
-  margin: 2% -3rem 0;
+  margin: 20px 0px 40px;
   scroll-margin-block: unset;
 }
 

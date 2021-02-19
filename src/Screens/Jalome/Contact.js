@@ -5,7 +5,6 @@ import Popup from 'reactjs-popup';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from 'emailjs-com';
-// init("user_uORlriQ29CU6yAQeCL11S");
 import Loader from 'react-loader-spinner';
 import img001 from '../../images/Contact/1.png';
 import img002 from '../../images/Contact/2.png';

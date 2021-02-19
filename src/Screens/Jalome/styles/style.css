@@ -81,7 +81,7 @@ p.get-in-touch {
     pointer-events: none;
 }
 
-button, button:focus {
+button, button:focus, .action-button{
     width: 181px;
     height: 45px;
     border: 0px;
@@ -107,7 +107,7 @@ button:hover{
     transition: transform .2s;
 }
 
-button:active{
+button:active, .action-button:active{
     background: #46A16E;
     color: #000000;
     transform: scale(0.95);

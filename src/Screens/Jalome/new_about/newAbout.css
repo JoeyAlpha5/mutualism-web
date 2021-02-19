@@ -36,32 +36,44 @@
 }
 
 .izandla-row.row{
-    width:75%;
+    width:80%;
 }
 
 .container.newAbt p {
     opacity: 0.75;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align:center;
 }
 
 .col-12.col-xl-4.about-bottom {
     padding-left: 0px;
 }
 
+.contactPageInput{
+    color: white;
+}
 
 h1{
     color: #46A16E;
 }
 
-@media (max-width:1200px){
-    .izandlacont,.container.newAbt{
-        margin-left: 20px;
+@media (max-width:1000px){
+    .izandlacont,.container.newAbt, .container.newAbtMenu{
+        max-width: 100% !important;
+        margin-left: 0px;
     }
 
     .secondHalf{
         height: auto;
     }
 
-    .secondHalf .izandlacont{
-        margin-left: 40px;
+    .izandla-row.row{
+        margin-left: 50px;
+    }
+
+    .collapsed{
+        background:transparent !important;
+        border-right: 0 !important;
     }
 }

@@ -12,6 +12,9 @@ import NewContact from './Screens/Jalome/new_contact/Contact'
 import NewAbout from './Screens/Jalome/new_about/About'
 
 function App() {
+
+
+
   return (
     <Router className="App">
       <Switch>
@@ -19,7 +22,7 @@ function App() {
             <NewAbout />
           </Route>
           <Route path="/contact">
-            <WebLayout page={"contact"}/>
+            <NewContact/>
           </Route>
           <Route path="/">
             <Home />

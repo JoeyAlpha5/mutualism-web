@@ -1,12 +1,112 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Sidebar from "../../../Components/Sidebar";
 import Menu from '../../../Components/Menubar';
 import graphic from '../../../images/About/graphic.svg';
 import logo from '../../../images/logo/mutualism-logo-white-no-text.svg';
 import { IoIosArrowRoundForward } from "react-icons/io";
+import Popup from 'reactjs-popup';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 
 const NewAbout = ()=>{
+    const [subscriber, setSubscriber] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        confirmEmail: ""
+    });
+
+    const [formValid, setFormValid] = useState(false);
+    // const {subscribe, status, error, value} = useMailchimp(apiUrl);
+
+    //set input values
+    const handleChange = event => {
+        setSubscriber({
+            ...subscriber,
+            [event.target.name]: event.target.value
+        })
+    }
+
+    //Toggle submit button attribute
+    const toggleButtonEnabled = () => document
+        .getElementById("newsletter-submit")
+        .toggleAttribute("disabled");
+
+    // update recaptcha
+    const onRecaptchaChange = (value)=>{
+        // console.log((value)? true: false)
+        if(value){
+            setFormValid(true);
+            toggleButtonEnabled();
+        }
+    }
+
+    // Validate the submission
+    const validateSubmission = (e) =>{
+        e.preventDefault();
+        if (!subscriber.firstName.trim()) {
+            setFormValid(false, ()=>console.log(formValid));
+        }
+        if (!subscriber.lastName.trim()){
+            setFormValid(false, ()=>console.log(formValid));
+        }
+        if (!(subscriber.email.trim() || subscriber.confirmEmail.trim())){
+            setFormValid(false, ()=>console.log(formValid));
+        }
+        if (formValid){
+            if (!(subscriber.email.trim() === subscriber.confirmEmail.trim())){
+                toggleButtonEnabled();
+            }else{
+                const subscribed = {
+                    members:[
+                        {
+                            email_address: subscriber.email.trim(),
+                            status: "subscribed",
+                            merge_fields:{
+                                FNAME: subscriber.firstName.trim(),
+                                LNAME: subscriber.lastName.trim(),
+                            }
+                        }
+                    ]
+                };
+
+                //Configurations
+                const data = JSON.stringify(subscribed);
+                const api_server = "us4";
+                const list_id = "9bf9510a43";
+                const api_key = "86463a1d5e5dc1657a4e7d1ac5907b62-us4";
+                const apiUrl = `https://${api_server}.api.mailchimp.com/3.0/lists/${list_id}/members`;
+                const options = {
+                    method: "POST",
+                    // mode: "no-cors",
+                    headers: {
+                        "Access-Control-Allow-Origin": "*",
+                        "Accept": "application/json",
+                        "Content-Type": "application/json",
+                        "Authorization": `auth ${api_key}`
+                        // "Authorization": "Basic " + btoa(`tomdesigns:${api_key}`
+                    },
+                    body: data
+                }
+
+                //API fetch method for mailchimp
+                fetch(apiUrl, options)
+                    .then(res => {console.log(res);
+                    return res.text();})
+                    .then(output => {
+                        // output ? JSON.parse(output): {}
+                        console.log(JSON.parse(output));
+                    }).then((response) => {
+                    console.info('fetch()', response);
+                    alert("Success! You have been added to the mailing list.");
+                    return response;})
+                    .catch(err => console.log(err));
+            }
+        }else{
+            toggleButtonEnabled();
+        }
+    };
     return(
         <>
             <Sidebar/>
@@ -67,7 +167,67 @@ const NewAbout = ()=>{
                             </p>
 
                             <h2 style={{color: "#46A16E"}}>Applications coming soon.</h2>
-                            <button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>
+                            {/* mailing list pop up */}
+                            <Popup className="home-modal" id="subscribe-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
+                                <div className="modal-Text">
+                                    <p className="modal-text-heading" style={{fontWeight:'bold'}}>Join our mailing list:</p>
+                                    <form action="?" id="newsletter-form" onSubmit={validateSubmission}>
+                                        <input
+                                            type="text"
+                                            name="firstName"
+                                            value={subscriber.firstName}
+                                            onChange={handleChange}
+                                            id="newsletter-firstname"
+                                            className="formElement"
+                                            placeholder="First Name"
+                                            required
+                                        />
+                                        <input
+                                            type="text"
+                                            name="lastName"
+                                            value={subscriber.lastName}
+                                            onChange={handleChange}
+                                            id="newsletter-lastname"
+                                            className="formElement"
+                                            placeholder="Last Name"
+                                            required
+                                        />
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            value={subscriber.email}
+                                            onChange={handleChange}
+                                            id="newsletter-email"
+                                            className="formElement"
+                                            placeholder="Email Address"
+                                            required
+                                        />
+                                        <input
+                                            type="email"
+                                            name="confirmEmail"
+                                            value={subscriber.confirmEmail}
+                                            onChange={handleChange}
+                                            id="newsletter-email-confirm"
+                                            className="formElement"
+                                            placeholder="Confirm Email Address"
+                                            required
+                                        />
+                                        <ReCAPTCHA
+                                            sitekey="6LdSVlEaAAAAAGHJ-lrPRKC411-z5rXbdlbMVdWN"
+                                            onChange={onRecaptchaChange}
+                                        />
+                                        <input type="submit"
+                                            value="Submit"
+                                            id="newsletter-submit"
+                                            className="action-button"
+                                            disabled
+                                        />
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                    </form>
+                                </div>
+                            </Popup>
                         </div>
                     </div>
 
