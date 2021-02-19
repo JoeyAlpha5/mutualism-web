@@ -9,6 +9,9 @@ import Home from './Screens/Jalome/Home';
 import WebLayout from './Components/WebLayout';
 
 function App() {
+
+
+
   return (
     <Router className="App">
       <Switch>

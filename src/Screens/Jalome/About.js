@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import graphic from '../../images/About/graphic.svg';
 import pathA from '../../images/About/Path 194.svg';
 import pathB from '../../images/About/Path 195.svg';
@@ -6,11 +6,111 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import logo from '../../images/logo/mutualism-logo-white-no-text.svg';
 import {Link} from "react-router-dom";
 import Space from "../../Components/Jalome/Space";
+import ReCAPTCHA from "react-google-recaptcha";
+// import {useMailchimp, Status} from 'hooks';
 import Button from '../../Components/Jalome/Button';
 import Popup from 'reactjs-popup';
 
 
 const About = ()=>{
+    const [subscriber, setSubscriber] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        confirmEmail: ""
+    });
+
+    const [formValid, setFormValid] = useState(false);
+    // const {subscribe, status, error, value} = useMailchimp(apiUrl);
+
+    //set input values
+    const handleChange = event => {
+        setSubscriber({
+            ...subscriber,
+            [event.target.name]: event.target.value
+        })
+    }
+
+    //Toggle submit button attribute
+    const toggleButtonEnabled = () => document
+        .getElementById("newsletter-submit")
+        .toggleAttribute("disabled");
+
+    // update recaptcha
+    const onRecaptchaChange = (value)=>{
+        // console.log((value)? true: false)
+        if(value){
+            setFormValid(true);
+            toggleButtonEnabled();
+        }
+    }
+
+    // Validate the submission
+    const validateSubmission = (e) =>{
+        e.preventDefault();
+        if (!subscriber.firstName.trim()) {
+            setFormValid(false, ()=>console.log(formValid));
+        }
+        if (!subscriber.lastName.trim()){
+            setFormValid(false, ()=>console.log(formValid));
+        }
+        if (!(subscriber.email.trim() || subscriber.confirmEmail.trim())){
+            setFormValid(false, ()=>console.log(formValid));
+        }
+        if (formValid){
+            if (!(subscriber.email.trim() === subscriber.confirmEmail.trim())){
+                toggleButtonEnabled();
+            }else{
+                const subscribed = {
+                    members:[
+                        {
+                            email_address: subscriber.email.trim(),
+                            status: "subscribed",
+                            merge_fields:{
+                                FNAME: subscriber.firstName.trim(),
+                                LNAME: subscriber.lastName.trim(),
+                            }
+                        }
+                    ]
+                };
+
+                //Configurations
+                const data = JSON.stringify(subscribed);
+                const api_server = "us4";
+                const list_id = "9bf9510a43";
+                const api_key = "86463a1d5e5dc1657a4e7d1ac5907b62-us4";
+                const apiUrl = `https://${api_server}.api.mailchimp.com/3.0/lists/${list_id}/members`;
+                const options = {
+                    method: "POST",
+                    // mode: "no-cors",
+                    headers: {
+                        "Access-Control-Allow-Origin": "*",
+                        "Accept": "application/json",
+                        "Content-Type": "application/json",
+                        "Authorization": `auth ${api_key}`
+                        // "Authorization": "Basic " + btoa(`tomdesigns:${api_key}`
+                    },
+                    body: data
+                }
+
+                //API fetch method for mailchimp
+                fetch(apiUrl, options)
+                    .then(res => {console.log(res);
+                    return res.text();})
+                    .then(output => {
+                        // output ? JSON.parse(output): {}
+                        console.log(JSON.parse(output));
+                    }).then((response) => {
+                    console.info('fetch()', response);
+                    alert("Success! You have been added to the mailing list.");
+                    return response;})
+                    .catch(err => console.log(err));
+            }
+        }else{
+            toggleButtonEnabled();
+        }
+    };
+
     return(
         <div className="main-body-col-1">
             <div className="mid-content about-mid-content">
@@ -18,18 +118,6 @@ const About = ()=>{
                     Izandla <br/>
                     Ziyagezana
                 </h1>
-                {/*<h2 className="caption animate__animated animate__fadeInDown" style={{color: "#46A16E"}}>*/}
-                {/*    “One hand washes another”*/}
-                {/*</h2>*/}
-                {/*<p className="body-text">*/}
-                {/*    This proverb reflects our business model in short: <br className="desktop-break"/>*/}
-                {/*    “Give a man a fish, and you’ll feed him for a day. <br className="desktop-break"/>*/}
-                {/*    Teach a man to fish, and you’ve fed him for a lifetime.” <br className="desktop-break"/>*/}
-                {/*    Mutualism strives to educate partners through hands <br className="desktop-break"/>*/}
-                {/*    on learning, and many other resources. We want to <br className="desktop-break"/>*/}
-                {/*    pass on business acumen so thousands of small <br className="desktop-break"/>*/}
-                {/*    business owners can flourish. <br/>*/}
-                {/*</p>*/}
                 <p className="body-text about_contact_p">
                     At Mutualism, we believe that the key to a successful <br className="desktop-break"/>
                     partnership is a mutually beneficial relationship built <br className="desktop-break"/>
@@ -64,23 +152,61 @@ const About = ()=>{
                         across South Africa in the next 6 months. We are accepting applications <br className="desktop-break"/>
                         for financing soon — so please join our newsletter to stay in the loop. <br className="desktop-break"/>
                     </p>
-                    {/*<p className="body-text">*/}
-                    {/*    Mutualism is a socially-minded financing firm designed to <br className="desktop-break"/>*/}
-                    {/*    support township based entrepreneurs and small businesses <br className="desktop-break"/>*/}
-                    {/*    with the goal of enhancing sustainable, locally owned businesses. <br className="desktop-break"/>*/}
-                    {/*</p>*/}
-                    {/*<p className="body-text">*/}
-                    {/*    Get to know our firm’s team that is dedicated to supporting entrepreneurs  <br className="desktop-break"/>*/}
-                    {/*    and small businesses. <br className="desktop-break"/>*/}
-                    {/*</p>*/}
                     <h2>Applications coming soon.</h2>
-                    <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal>
+                    <Popup className="home-modal" id="subscribe-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal>
                         <div className="modal-Text">
                             <p className="modal-text-heading">Join our mailing list:</p>
-                            <form action="" id="" onSubmit="">
-                                <input type="email" name="email" id="newsletter-email" className="formElement" placeholder="Email Address"/>
-                                <input type="email" name="confirmEmail" id="newsletter-email" className="formElement" placeholder="Confirm Email Address"/>
-                                <input type="submit" value="Submit" className="action-button" /><br/>
+                            <form action="?" id="newsletter-form" onSubmit={validateSubmission}>
+                                <input
+                                    type="text"
+                                    name="firstName"
+                                    value={subscriber.firstName}
+                                    onChange={handleChange}
+                                    id="newsletter-firstname"
+                                    className="formElement"
+                                    placeholder="First Name"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    name="lastName"
+                                    value={subscriber.lastName}
+                                    onChange={handleChange}
+                                    id="newsletter-lastname"
+                                    className="formElement"
+                                    placeholder="Last Name"
+                                    required
+                                />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    value={subscriber.email}
+                                    onChange={handleChange}
+                                    id="newsletter-email"
+                                    className="formElement"
+                                    placeholder="Email Address"
+                                    required
+                                />
+                                <input
+                                    type="email"
+                                    name="confirmEmail"
+                                    value={subscriber.confirmEmail}
+                                    onChange={handleChange}
+                                    id="newsletter-email-confirm"
+                                    className="formElement"
+                                    placeholder="Confirm Email Address"
+                                    required
+                                />
+                                <ReCAPTCHA
+                                    sitekey="6LdSVlEaAAAAAGHJ-lrPRKC411-z5rXbdlbMVdWN"
+                                    onChange={onRecaptchaChange}
+                                />
+                                <input type="submit"
+                                       value="Submit"
+                                       id="newsletter-submit"
+                                       className="action-button"
+                                       disabled
+                                />
                                 <br/>
                             </form>
                         </div>

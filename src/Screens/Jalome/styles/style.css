@@ -101,13 +101,13 @@ button, button:focus, .action-button{
     /* transition: color 0.3s; */
 }
 
-button:hover, .action-button{
+button:hover{
     background: black;
     color: white;
     transition: transform .2s;
 }
 
-button:active, .action-button{
+button:active, .action-button:active{
     background: #46A16E;
     color: #000000;
     transform: scale(0.95);
