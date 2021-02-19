@@ -7,7 +7,6 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './Screens/Jalome/Home';
-import WebLayout from './Components/WebLayout';
 import NewContact from './Screens/Jalome/new_contact/Contact'
 import NewAbout from './Screens/Jalome/new_about/About'
 
