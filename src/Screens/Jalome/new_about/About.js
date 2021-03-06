@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Sidebar from "../../../Components/Sidebar";
 import Menu from '../../../Components/Menubar';
 import graphic from '../../../images/About/graphic.svg';
@@ -10,6 +10,23 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 const NewAbout = ()=>{
+
+    useEffect(()=>{
+        // change top bar when user scrolls
+        document.addEventListener('scroll',()=>{
+            var header = document.getElementById("NewAbtTopSec");
+            if(header != null){
+                if(window.scrollY > 10){
+                    header.style.background = "#131313";
+                    header.style.boxShadow = "0 1px 3px rgb(0 0 0 / 34%)";
+                }else if(window.scrollY < 10){
+                    header.style.background = null;
+                    header.style.boxShadow = null;
+                }
+            }
+        })
+    },[])
+
     const [subscriber, setSubscriber] = useState({
         firstName: "",
         lastName: "",
@@ -111,7 +128,7 @@ const NewAbout = ()=>{
         <>
             <Sidebar/>
             {/* menu */}
-            <div className="NewAbtTopSec">
+            <div className="NewAbtTopSec" id="NewAbtTopSec">
                 <div className="container newAbtMenu">
                     <div id="homepageMenu">
                         <Menu/>
@@ -151,14 +168,9 @@ const NewAbout = ()=>{
                                 we are to our own. 
                             </p>
                             <p className="body-text about_contact_p">
-                                “Give a man a fish, and he’ll eat for a day. Teach a man 
-                                to fish, and he’ll eat for a lifetime. What they didn’t say is, 
-                                “And it would be nice if you gave him a damn fishing rod.” 
-                                — This quote is from Trevor Noah’s (Legendary South African) 
-                                Born a Criminal… and it so accurately reflects our business 
-                                model because, beyond providing educating resources we provide 
-                                the physical asset to conduct and carry your own business. 
-                                We give you the fishing rod. 
+                                At Mutualism, we strive to be the teacher as well as the fishing
+                                rod. We aim to help guide our entrepreneurs in their journeys, while 
+                                providing the necessary resources for them to be successful. 
                             </p>
                             <p className="body-text about_contact_p">
                                 Mutualism is scaling with the goal to develop hundreds of SMMEs
@@ -247,14 +259,6 @@ const NewAbout = ()=>{
                                 other. We strive to use an innovative financing model to support 
                                 people without access to traditional funding. Two unlikely partners 
                                 forming a strong relationship and supporting each other. 
-                            </p>
-                            <h2 className="caption" style={{color: "#46A16E"}}>
-                                “One hand washes another”
-                            </h2>
-                            <p className="body-text about_contact_p">
-                                At Mutualism, we strive to be the teacher as well as the fishing<br className="desktop-break"/>
-                                rod. We aim to help guide our entrepreneurs in their journeys, while <br className="desktop-break"/>
-                                providing the necessary resources for them to be successful. <br className="desktop-break"/>
                             </p>
                         </div>
                     </div>

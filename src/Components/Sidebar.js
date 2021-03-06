@@ -20,8 +20,10 @@ function Sidebar() {
                     </div>
                 </div>
                 <div id="social-links" className={isActive ? "icons-hidden" : "icons-shown"}>
-                    <IoLogoLinkedin className="social-lnk nav-item" onClick={()=>window.open("https://www.linkedin.com/company/mutualismsa/")}/>
+                    <IoLogoInstagram className="social-lnk nav-item" onClick={()=>window.open("https://www.instagram.com/mutualismsa/")}/>
+                    <IoLogoTwitter className="social-lnk nav-item" onClick={()=>window.open("https://twitter.com/MutualismSA")}/>
                     <IoLogoFacebook className="social-lnk nav-item" onClick={()=>window.open("https://www.facebook.com/MutualismSA")}/>
+                    <IoLogoLinkedin className="social-lnk nav-item" onClick={()=>window.open("https://www.linkedin.com/company/mutualismsa/")}/>
                     <a href="mailto:info@mutualism.co.za"><IoMail className="social-lnk nav-item" /></a>
                     {/* <IoLogoInstagram className="social-lnk nav-item"/>
                     <IoLogoTwitter className="social-lnk nav-item"/> */}

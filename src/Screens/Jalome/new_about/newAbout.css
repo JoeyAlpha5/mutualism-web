@@ -1,6 +1,10 @@
 .NewAbtTopSec {
     width: 100%;
-    background-color: #131313;
+    height: 81px;
+    /* background: #131313; */
+    position: fixed;
+    z-index: 1;
+    /* box-shadow: 0 1px 3px rgb(0 0 0 / 34%); */
 }
 
 

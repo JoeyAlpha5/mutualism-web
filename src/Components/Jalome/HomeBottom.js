@@ -5,7 +5,7 @@ const HomeBottom = ()=>{
             <div className="grid-item">
                 <h5>Business Consulting</h5>
                 <p className="body-text">
-                    We use our resources to guide and educate<br/> entrepreneurs on how to optimize their<br/> businesses
+                    We use our resources to guide and educate<br/> entrepreneurs on how to optimize their<br/> businesses.
                 </p>
             </div>
             <div className="grid-item">

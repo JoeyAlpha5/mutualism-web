@@ -92,7 +92,7 @@ const NewContact = ()=>{
         <>
             <Sidebar/>
             {/* menu */}
-            <div className="NewAbtTopSec">
+            <div className="NewAbtTopSec" id="NewAbtTopSec">
                 <div className="container newAbtMenu">
                     <div id="homepageMenu">
                         <Menu/>
@@ -130,12 +130,6 @@ const NewContact = ()=>{
                                 </p>
                                 <h3 className="animate__animated animate__fadeInUp">Come see us.</h3>
 
-                                <div className="_canvas">
-                                    <iframe title="Mutualism Location" width="100%" height="100%" id="location"
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7306894141416!2d27.901096014767898!3d-26.237938771717218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a74869298cb7%3A0xa16106dc004dc86f!2s7166%20Vilakazi%20St%2C%20Orlando%20West%2C%20Soweto%2C%201804!5e0!3m2!1sen!2sza!4v1612825902319!5m2!1sen!2sza"
-                                        frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"/>
-                                </div>
-
                             </div>
                             <div className="col-12 col-xl-6">
                                 <form action="?" id="contact-form" onSubmit={sendMessage}>
@@ -164,6 +158,14 @@ const NewContact = ()=>{
                                 </form>
                             </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="_canvas">
+                    <iframe title="Mutualism Location" width="100%" height="100%" id="location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7306894141416!2d27.901096014767898!3d-26.237938771717218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a74869298cb7%3A0xa16106dc004dc86f!2s7166%20Vilakazi%20St%2C%20Orlando%20West%2C%20Soweto%2C%201804!5e0!3m2!1sen!2sza!4v1612825902319!5m2!1sen!2sza"
+                        frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"/>
                 </div>
             </div>
         </>
