@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { Link } from "react-router-dom";
 import { IoChevronBackOutline, IoLogoLinkedin, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoMail} from 'react-icons/io5';
-import logolg from '../images/logo/mutualism_logo_large.png';
+import logolg from '../images/logo/mutualism-logo-white.svg';
 import './ElementStyles/Hamburger.css';
 
 

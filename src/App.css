@@ -276,6 +276,27 @@ img.shape{
   font-size: 2rem;
 }
 
+.form-modal-newsletter-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.form-modal-newsletter-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].form-modal-newsletter-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.form-modal-newsletter-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].form-modal-newsletter-overlay {
+  background: transparent;
+}
+
 /*Styling of the side content section of the app*/
 .main-body-col-2{
   color: #ffffff;

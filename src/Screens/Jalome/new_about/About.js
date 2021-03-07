@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Sidebar from "../../../Components/Sidebar";
 import Menu from '../../../Components/Menubar';
-import graphic from '../../../images/About/graphic.svg';
+import graphic from '../../../images/About/IzandlaGraphic-black-bg.svg';
 import logo from '../../../images/logo/mutualism-logo-white-no-text.svg';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Popup from 'reactjs-popup';
@@ -180,7 +180,7 @@ const NewAbout = ()=>{
 
                             <h2 style={{color: "#46A16E"}}>Applications coming soon.</h2>
                             {/* mailing list pop up */}
-                            <Popup className="home-modal" id="subscribe-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
+                            <Popup className="home-modal form-modal-newsletter" id="subscribe-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
                                 <div className="modal-Text">
                                     <p className="modal-text-heading" style={{fontWeight:'bold'}}>Join our mailing list:</p>
                                     <form action="?" id="newsletter-form" onSubmit={validateSubmission}>
