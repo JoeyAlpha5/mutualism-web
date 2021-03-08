@@ -75,50 +75,22 @@ const NewAbout = ()=>{
             if (!(subscriber.email.trim() === subscriber.confirmEmail.trim())){
                 toggleButtonEnabled();
             }else{
-                const subscribed = {
-                    members:[
-                        {
-                            email_address: subscriber.email.trim(),
-                            status: "subscribed",
-                            merge_fields:{
-                                FNAME: subscriber.firstName.trim(),
-                                LNAME: subscriber.lastName.trim(),
-                            }
-                        }
-                    ]
-                };
-
                 //Configurations
-                const data = JSON.stringify(subscribed);
-                const api_server = "us4";
-                const list_id = "9bf9510a43";
-                const api_key = "86463a1d5e5dc1657a4e7d1ac5907b62-us4";
-                const apiUrl = `https://${api_server}.api.mailchimp.com/3.0/lists/${list_id}/members`;
+                const apiUrl = `https://mutualism-test.herokuapp.com/api/mailchimp`;
                 const options = {
                     method: "POST",
-                    // mode: "no-cors",
                     headers: {
-                        "Access-Control-Allow-Origin": "*",
-                        "Accept": "application/json",
-                        "Content-Type": "application/json",
-                        "Authorization": `auth ${api_key}`
-                        // "Authorization": "Basic " + btoa(`tomdesigns:${api_key}`
+                        "Content-Type": "application/x-www-form-urlencoded",
                     },
-                    body: data
+                    body: `email=${subscriber.email.trim()}&name=${subscriber.firstName.trim()}&last_name=${subscriber.lastName.trim()}`
                 }
-
                 //API fetch method for mailchimp
                 fetch(apiUrl, options)
-                    .then(res => {console.log(res);
-                    return res.text();})
-                    .then(output => {
-                        // output ? JSON.parse(output): {}
-                        console.log(JSON.parse(output));
-                    }).then((response) => {
-                    console.info('fetch()', response);
-                    alert("Success! You have been added to the mailing list.");
-                    return response;})
-                    .catch(err => console.log(err));
+                .then(res =>res.json())
+                .then(re=>{
+                    console.log(re);
+                })
+                .catch(err => console.log(err));
             }
         }else{
             toggleButtonEnabled();
@@ -178,7 +150,7 @@ const NewAbout = ()=>{
                                 for financing soon — so please join our newsletter to stay in the loop.
                             </p>
 
-                            <h2 style={{color: "#46A16E"}}>Applications coming soon.</h2>
+                            <h2 style={{color: "#46A16E"}}>Sign up for our newsletter.</h2>
                             {/* mailing list pop up */}
                             <Popup className="home-modal form-modal-newsletter" id="subscribe-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
                                 <div className="modal-Text">

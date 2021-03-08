@@ -5,16 +5,7 @@ import {IoIosArrowRoundForward} from "react-icons/io";
 import Popup from 'reactjs-popup';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import ReCAPTCHA from "react-google-recaptcha";
-import emailjs from 'emailjs-com';
 import Loader from 'react-loader-spinner';
-import img001 from '../../../images/Contact/1.png';
-import img002 from '../../../images/Contact/2.png';
-import img003 from '../../../images/Contact/3.png';
-import img004 from '../../../images/Contact/4.png';
-import img005 from '../../../images/Contact/5.png';
-import img006 from '../../../images/Contact/6.png';
-import img007 from '../../../images/Contact/7.png';
-import img008 from '../../../images/Contact/8.png';
 
 const NewContact = ()=>{
     const [Name,setName] = useState("");
@@ -52,16 +43,24 @@ const NewContact = ()=>{
             setOverText("Please confirm you're not a robot");
         }else{
             setOverText("");
-            emailjs.sendForm('service_3kqkehw', 'template_9zak0xy', e.target, 'user_uORlriQ29CU6yAQeCL11S')
-            .then((result) => {
-                // console.log(result.text);
+            const apiUrl = `https://mutualism-test.herokuapp.com/api/contactForm`;
+            const options = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: `email=${Email.trim()}&name=${Name.trim()}&last_name=${LastName.trim()}&mobile=${Phone}&message=${Message}`
+            }
+            // 
+            fetch(apiUrl, options)
+            .then(res =>res.json())
+            .then(re=>{
                 setOverText("Message sent, the team will be in touch soon.");
-                clearForm();
-            }, (error) => {
-                // console.log(error.text);
+            })
+            .catch((err) => {
                 setOverText("Unable to send message, please try again.");
-
             });
+            
         }
 
     }
@@ -78,9 +77,9 @@ const NewContact = ()=>{
 
     // update recaptcha
     const onRecaptchaChange = (value)=>{
-        console.log(value);
-        console.log(typeof(value));
-        console.log(value == "")
+        // console.log(value);
+        // console.log(typeof(value));
+        // console.log(value == "")
         if(value == ""){
             setFormValid(false);
         }else{
