@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from "react";
+import Loader from "react-loader-spinner";
 import Sidebar from "../../../Components/Sidebar";
-import Menu from '../../../Components/Menubar';
-import graphic from '../../../images/About/IzandlaGraphic-black-bg.svg';
-import logo from '../../../images/logo/mutualism-logo-white-no-text.svg';
+import Menu from "../../../Components/Menubar";
+import graphic from "../../../images/About/IzandlaGraphic-black-bg.svg";
+import logo from "../../../images/logo/mutualism-logo-white-no-text.svg";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Popup from 'reactjs-popup';
+import Popup from "reactjs-popup";
 import ReCAPTCHA from "react-google-recaptcha";
 
 
@@ -34,8 +35,16 @@ const NewAbout = ()=>{
         confirmEmail: ""
     });
 
+    //Validate form method
     const [formValid, setFormValid] = useState(false);
     // const {subscribe, status, error, value} = useMailchimp(apiUrl);
+
+    // states for submission error and validation checks
+    const [submissionComplete, setSubmissionComplete] = useState(false);
+    const [submissionError, setSubmissionError] = useState("");
+
+    // state for form status
+    const [formStatus, setFormStatus] = useState("");
 
     //set input values
     const handleChange = event => {
@@ -53,47 +62,79 @@ const NewAbout = ()=>{
     // update recaptcha
     const onRecaptchaChange = (value)=>{
         // console.log((value)? true: false)
-        if(value){
+        if(value === "" || value === null){
+            setFormValid(false);
+            toggleButtonEnabled();
+            // console.log(formValid);
+        }else{
             setFormValid(true);
             toggleButtonEnabled();
+            // console.log(formValid);
+        }
+    }
+
+    const clearForm = () => {
+        setSubscriber({
+            firstName: "",
+            lastName: "",
+            email: "",
+            confirmEmail: ""
+        });
+    }
+
+    const resetForm = () => {
+        // ensure the form is clear
+        setFormStatus("");
+        setSubmissionError("");
+        setSubmissionComplete(false);
+        setFormValid(false);
+        clearForm();
+    }
+
+    const loading = ()=> {
+        if(formStatus === ""){
+            setFormStatus(<Loader type="Grid" color="#212529" height={20} width={20}/>);
         }
     }
 
     // Validate the submission
     const validateSubmission = (e) =>{
         e.preventDefault();
-        if (!subscriber.firstName.trim()) {
-            setFormValid(false, ()=>console.log(formValid));
-        }
-        if (!subscriber.lastName.trim()){
-            setFormValid(false, ()=>console.log(formValid));
-        }
-        if (!(subscriber.email.trim() || subscriber.confirmEmail.trim())){
-            setFormValid(false, ()=>console.log(formValid));
-        }
-        if (formValid){
-            if (!(subscriber.email.trim() === subscriber.confirmEmail.trim())){
-                toggleButtonEnabled();
-            }else{
-                //Configurations
-                const apiUrl = `https://mutualism-test.herokuapp.com/api/mailchimp`;
-                const options = {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/x-www-form-urlencoded",
-                    },
-                    body: `email=${subscriber.email.trim()}&name=${subscriber.firstName.trim()}&last_name=${subscriber.lastName.trim()}`
-                }
-                //API fetch method for mailchimp
-                fetch(apiUrl, options)
+        loading();
+        let message;
+        if (!(subscriber.email.trim() === subscriber.confirmEmail.trim())) {
+            // setFormValid(false);
+            setSubmissionComplete(false);
+            message = "Please fill in all the fields and make sure your email matches.";
+            // setSubmissionError(message);
+            setFormStatus(<div className="alert alert-danger" role="alert">{message}</div>);
+            console.log(submissionError);
+        }else{
+            //Configurations
+            const apiUrl = `https://mutualism-test.herokuapp.com/api/mailchimp`;
+            const options = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: `email=${subscriber.email.trim()}&name=${subscriber.firstName.trim()}&last_name=${subscriber.lastName.trim()}`
+            }
+            //API fetch method for mailchimp
+            fetch(apiUrl, options)
                 .then(res =>res.json())
                 .then(re=>{
-                    console.log(re);
+                    setSubmissionComplete(true);
+                    setSubmissionError("");
+                    message = "Thank you for your details, we'll be in touch.";
+                    setFormStatus(<div className="alert alert-success" role="alert">{message}</div>);
+                    clearForm();
+                    // console.log(re);
                 })
-                .catch(err => console.log(err));
-            }
-        }else{
-            toggleButtonEnabled();
+                .catch(err => {
+                    setSubmissionError(err.message);
+                    message = "Unsuccessful, please try again later. If the error persists contact site admin."
+                    setFormStatus(<div className="alert alert-danger" role="alert">{message}</div>);
+                });
         }
     };
     return(
@@ -152,7 +193,7 @@ const NewAbout = ()=>{
 
                             <h2 style={{color: "#46A16E"}}>Sign up for our newsletter.</h2>
                             {/* mailing list pop up */}
-                            <Popup className="home-modal form-modal-newsletter" id="subscribe-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
+                            <Popup className="home-modal form-modal-newsletter" id="subscribe-modal" onOpen={resetForm} trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
                                 <div className="modal-Text">
                                     <p className="modal-text-heading" style={{fontWeight:'bold'}}>Join our mailing list:</p>
                                     <form action="?" id="newsletter-form" onSubmit={validateSubmission}>
@@ -208,6 +249,9 @@ const NewAbout = ()=>{
                                         />
                                         <br/>
                                         <br/>
+                                        <span style={(formStatus==="")?{display:"none"}:{textAlign:"center"}}>
+                                            {formStatus}
+                                        </span>
                                         <br/>
                                     </form>
                                 </div>

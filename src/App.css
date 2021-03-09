@@ -280,8 +280,34 @@ img.shape{
   margin: auto;
   background: rgb(255, 255, 255);
   width: 50%;
+  height: 62%;
   padding: 5px;
 }
+
+@media (max-height: 900px){
+  .form-modal-newsletter-content {
+    height: 65%;
+  }
+}
+
+@media (max-height: 800px){
+  .form-modal-newsletter-content {
+    height: 70%;
+  }
+}
+
+@media (max-height: 768px){
+  .form-modal-newsletter-content {
+    height: 75%;
+  }
+}
+
+@media (max-height: 600px){
+  .form-modal-newsletter-content {
+    height: 95%;
+  }
+}
+
 .form-modal-newsletter-arrow {
   color: rgb(255, 255, 255);
 }
