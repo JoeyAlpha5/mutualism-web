@@ -21,22 +21,22 @@ const NewContact = ()=>{
     const sendMessage = (e)=>{
         // prevent the page from reloading when submitting the form
         e.preventDefault();
-        if(Name == ""){
+        if(Name.trim() == ""){
             setOverText("Please enter your first name");
         }
-        else if(LastName == ""){
+        else if(LastName.trim() == ""){
             setOverText("Please enter your last name");
         }
-        else if(Email == ""){
+        else if(Email.trim() == ""){
             setOverText("Please enter your email address");
         }
-        else if(Phone == ""){
+        else if(Phone.trim() == ""){
             setOverText("Please enter your phone number");
         }
-        else if(Subject == ""){
+        else if(Subject.trim() == ""){
             setOverText("Please select a reason for your inquiry");
         }
-        else if(Message == ""){
+        else if(Message.trim() == ""){
             setOverText("Please enter a message");
         }
         else if(formValid == false){
