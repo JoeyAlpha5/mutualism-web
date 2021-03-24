@@ -280,7 +280,7 @@ const NewAbout = ()=>{
                         </div>
                     </div>
                     <Space/>
-                    <div className="row izandla-row">
+                    <div className="row izandla-row mobile-reverse-direction">
                         <div className="col-12 col-xl-6">
                             <h1 className="home-heading contact-about-heading" style={{color: "#fff"}}>Logo Explained</h1>
                             <p className="body-text about_contact_p">
@@ -322,7 +322,7 @@ const NewAbout = ()=>{
                         </div>
                     </div>
                     <Space/>
-                    <div className="row izandla-row">
+                    <div className="row izandla-row mobile-reverse-direction">
                         <div className="col-12 col-xl-6">
                             <h1 className="home-heading contact-about-heading" style={{color: "#fff"}}>Why We
                                 Do It?</h1>

@@ -4,6 +4,7 @@
     <list default="true" id="49c4aa27-29ea-4910-938c-8a650394c598" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Screens/Jalome/new_about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/Jalome/new_about/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/Jalome/new_about/newAbout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screens/Jalome/new_about/newAbout.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,7 @@
       <workItem from="1613573904563" duration="52309000" />
       <workItem from="1615153931263" duration="1698000" />
       <workItem from="1616512346113" duration="21563000" />
+      <workItem from="1616580642121" duration="2931000" />
     </task>
     <task id="LOCAL-00001" summary="Popup Newsletter Email Form Added">
       <created>1613504750650</created>
