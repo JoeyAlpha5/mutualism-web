@@ -228,8 +228,11 @@ img.shape{
 }
 
 .logo-lg{
+  display: block;
   width: 200px;
   margin-top: 42px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*.action-button{*/

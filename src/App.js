@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './App.css';
 import './Screens/Jalome/styles/style.css';
 import './Screens/Jalome/new_about/newAbout.css';
@@ -7,8 +9,8 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './Screens/Jalome/Home';
-import NewContact from './Screens/Jalome/new_contact/Contact'
-import NewAbout from './Screens/Jalome/new_about/About'
+import NewContact from './Screens/Jalome/new_contact/Contact';
+import NewAbout from './Screens/Jalome/new_about/About';
 
 function App() {
 
