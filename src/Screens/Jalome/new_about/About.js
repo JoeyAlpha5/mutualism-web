@@ -212,71 +212,71 @@ const NewAbout = ()=>{
                                 for financing soon — so please join our newsletter to stay in the loop.
                             </p>
 
-                            <h2 style={{color: "#46A16E"}}>Sign up for our newsletter.</h2>
-                            {/* mailing list pop up */}
-                            <Popup className="home-modal form-modal-newsletter" id="subscribe-modal" onOpen={resetForm} trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
-                                <div className="modal-Text">
-                                    <p className="modal-text-heading" style={{fontWeight:'bold'}}>Join our mailing list:</p>
-                                    <form action="?" id="newsletter-form" onSubmit={validateSubmission}>
-                                        <input
-                                            type="text"
-                                            name="firstName"
-                                            value={subscriber.firstName}
-                                            onChange={handleChange}
-                                            id="newsletter-firstname"
-                                            className="formElement"
-                                            placeholder="First Name"
-                                            required
-                                        />
-                                        <input
-                                            type="text"
-                                            name="lastName"
-                                            value={subscriber.lastName}
-                                            onChange={handleChange}
-                                            id="newsletter-lastname"
-                                            className="formElement"
-                                            placeholder="Last Name"
-                                            required
-                                        />
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            value={subscriber.email}
-                                            onChange={handleChange}
-                                            id="newsletter-email"
-                                            className="formElement"
-                                            placeholder="Email Address"
-                                            required
-                                        />
-                                        <input
-                                            type="email"
-                                            name="confirmEmail"
-                                            value={subscriber.confirmEmail}
-                                            onChange={handleChange}
-                                            id="newsletter-email-confirm"
-                                            className="formElement"
-                                            placeholder="Confirm Email Address"
-                                            required
-                                        />
-                                        <ReCAPTCHA
-                                            sitekey="6LdSVlEaAAAAAGHJ-lrPRKC411-z5rXbdlbMVdWN"
-                                            onChange={onRecaptchaChange}
-                                        />
-                                        <input type="submit"
-                                            value="Submit"
-                                            id="newsletter-submit"
-                                            className="action-button"
-                                            disabled
-                                        />
-                                        <br/>
-                                        <br/>
-                                        <span style={(formStatus==="")?{display:"none"}:{textAlign:"center"}}>
-                                            {formStatus}
-                                        </span>
-                                        <br/>
-                                    </form>
-                                </div>
-                            </Popup>
+                            {/*<h2 style={{color: "#46A16E"}}>Sign up for our newsletter.</h2>*/}
+                            {/*/!* mailing list pop up *!/*/}
+                            {/*<Popup className="home-modal form-modal-newsletter" id="subscribe-modal" onOpen={resetForm} trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>*/}
+                            {/*    <div className="modal-Text">*/}
+                            {/*        <p className="modal-text-heading" style={{fontWeight:'bold'}}>Join our mailing list:</p>*/}
+                            {/*        <form action="?" id="newsletter-form" onSubmit={validateSubmission}>*/}
+                            {/*            <input*/}
+                            {/*                type="text"*/}
+                            {/*                name="firstName"*/}
+                            {/*                value={subscriber.firstName}*/}
+                            {/*                onChange={handleChange}*/}
+                            {/*                id="newsletter-firstname"*/}
+                            {/*                className="formElement"*/}
+                            {/*                placeholder="First Name"*/}
+                            {/*                required*/}
+                            {/*            />*/}
+                            {/*            <input*/}
+                            {/*                type="text"*/}
+                            {/*                name="lastName"*/}
+                            {/*                value={subscriber.lastName}*/}
+                            {/*                onChange={handleChange}*/}
+                            {/*                id="newsletter-lastname"*/}
+                            {/*                className="formElement"*/}
+                            {/*                placeholder="Last Name"*/}
+                            {/*                required*/}
+                            {/*            />*/}
+                            {/*            <input*/}
+                            {/*                type="email"*/}
+                            {/*                name="email"*/}
+                            {/*                value={subscriber.email}*/}
+                            {/*                onChange={handleChange}*/}
+                            {/*                id="newsletter-email"*/}
+                            {/*                className="formElement"*/}
+                            {/*                placeholder="Email Address"*/}
+                            {/*                required*/}
+                            {/*            />*/}
+                            {/*            <input*/}
+                            {/*                type="email"*/}
+                            {/*                name="confirmEmail"*/}
+                            {/*                value={subscriber.confirmEmail}*/}
+                            {/*                onChange={handleChange}*/}
+                            {/*                id="newsletter-email-confirm"*/}
+                            {/*                className="formElement"*/}
+                            {/*                placeholder="Confirm Email Address"*/}
+                            {/*                required*/}
+                            {/*            />*/}
+                            {/*            <ReCAPTCHA*/}
+                            {/*                sitekey="6LdSVlEaAAAAAGHJ-lrPRKC411-z5rXbdlbMVdWN"*/}
+                            {/*                onChange={onRecaptchaChange}*/}
+                            {/*            />*/}
+                            {/*            <input type="submit"*/}
+                            {/*                value="Submit"*/}
+                            {/*                id="newsletter-submit"*/}
+                            {/*                className="action-button"*/}
+                            {/*                disabled*/}
+                            {/*            />*/}
+                            {/*            <br/>*/}
+                            {/*            <br/>*/}
+                            {/*            <span style={(formStatus==="")?{display:"none"}:{textAlign:"center"}}>*/}
+                            {/*                {formStatus}*/}
+                            {/*            </span>*/}
+                            {/*            <br/>*/}
+                            {/*        </form>*/}
+                            {/*    </div>*/}
+                            {/*</Popup>*/}
                         </div>
                     </div>
                     <Space/>

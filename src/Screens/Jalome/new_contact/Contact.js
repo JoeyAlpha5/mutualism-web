@@ -6,6 +6,7 @@ import Popup from 'reactjs-popup';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import Loader from 'react-loader-spinner';
+import {Link} from "react-router-dom";
 
 const NewContact = ()=>{
     const [Name,setName] = useState("");
@@ -124,6 +125,8 @@ const NewContact = ()=>{
                                     consulting strategy which brings successes to the small business <br className="desktop-break"/>
                                     owners of South Africa. <br className="desktop-break"/>
                                 </p>
+                                <h2 style={{color: "#46A16E"}}>Interested in funding? Sign up for our newsletter.</h2>
+                                <button className="animate__animated animate__fadeInUp" onClick={()=>document.location="https://mutualism.co.za/mailinglist/#/"}><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>
                                 <p className="body-text about_contact_p">
                                     Discover what’s possible with community centered investment. <br className="desktop-break"/>
                                 </p>
@@ -138,7 +141,7 @@ const NewContact = ()=>{
                                     <input value={Phone} onChange={(val)=>{setPhone(val.target.value)}} type="tel" id="email" className="formElement phone contactPageInput" name="phone" placeholder="Phone*"/>
                                     <select value={Subject} onChange={(val)=>{setSubject(val.target.value)}} id="subject" className="formElement subject contactPageInput" name="subject">
                                         <option disabled>Reason for Inquiry</option>
-                                        <option>Financing</option>
+                                        <option>Supplier Partnership</option>
                                         <option>Join Our Team</option>
                                         <option>Invest in SMMEs</option>
                                         <option>Partnership</option>
