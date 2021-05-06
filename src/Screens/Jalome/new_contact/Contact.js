@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import Sidebar from "../../../Components/Sidebar";
 import Menu from '../../../Components/Menubar';
 import {IoIosArrowRoundForward} from "react-icons/io";
@@ -15,7 +15,12 @@ const NewContact = ()=>{
     const [Subject,setSubject] = useState("");
     const [Message,setMessage] = useState("");
     const [overlayText,setOverText] = useState("");
-    const [formValid, setFormValid] = useState(false)
+    const [formValid, setFormValid] = useState(false);
+    
+    useEffect(()=>{
+        // change page title
+        document.title = "Contact Us - Mutualism";
+    },[])
 
     // validate and send message
     const sendMessage = (e)=>{

@@ -20,6 +20,9 @@ import Slider from "react-slick";
 const NewAbout = ()=>{
 
     useEffect(()=>{
+        // change page title
+        document.title = "About Us - Mutualism";
+
         // change top bar when user scrolls
         document.addEventListener('scroll',()=>{
             var header = document.getElementById("NewAbtTopSec");

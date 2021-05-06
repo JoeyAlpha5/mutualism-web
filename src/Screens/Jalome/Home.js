@@ -1,10 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Sidebar from "../../Components/Sidebar";
 import Main from "../../Components/Maincontent";
 import Menu from "../../Components/Menubar";
 
 
 const Home = ()=>{
+
+    useEffect(()=>{
+        // change page title
+        document.title = "Welcome to Mutualism - Mutualism";
+    },[])
 
     return (
         <div className="main">

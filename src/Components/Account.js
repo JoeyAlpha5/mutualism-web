@@ -11,22 +11,8 @@ function Account(){
         fontSize: "1.5rem"
     };
     return(
-        <Popup
-            trigger={<div className="menu-item account-item nav-item" style={style}><VscAccount/></div>}
-            position="bottom center"
-            on="hover"
-            closeOnDocumentClick
-            mouseLeaveDelay={300}
-            mouseEnterDelay={0}
-            contentStyle={{ padding: '1rem', border: 'none' }}
-
-        >
-            <div className="menu popup-content">
-                <div className="submenu-item"> Partner</div>
-                <div className="submenu-item"> Consultant</div>
-                <div className="submenu-item"> Client</div>
-            </div>
-        </Popup>
+        
+        <div onClick={()=>window.open('https://mutualism.co.za/portal-testing-env/#/')} className="menu-item account-item nav-item" style={style}><VscAccount/></div>
     );
 }
 
