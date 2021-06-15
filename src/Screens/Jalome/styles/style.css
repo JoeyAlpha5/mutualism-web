@@ -61,6 +61,11 @@ a:hover, a:focus{
     margin-bottom: 0;
 }
 
+.side-nav .apply-btn {
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+}
+
 p.get-in-touch {
     color: gray;
     margin: 0px;
@@ -268,7 +273,7 @@ h3{
 #homepageMenu{
     position:fixed;
     right: 0;
-    width: 35%;
+    width: 40%;
 }
 
 .path{

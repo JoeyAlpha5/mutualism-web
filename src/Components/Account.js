@@ -12,7 +12,9 @@ function Account(){
     };
     return(
         
-        <div onClick={()=>window.open('https://mutualism.co.za/portal-testing-env/#/')} className="menu-item account-item nav-item" style={style}><VscAccount/></div>
+        <div onClick={()=>window.open('https://app.mutualism.co.za/')} className="apply-btn" style={style}>
+            Apply now
+        </div>
     );
 }
 

@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { Link } from "react-router-dom";
 import { IoChevronBackOutline, IoLogoLinkedin, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoMail} from 'react-icons/io5';
+import Account from './Account';
 import logolg from '../images/logo/mutualism-logo-white.svg';
 import './ElementStyles/Hamburger.css';
 
@@ -39,6 +40,9 @@ function Sidebar() {
                                 <li className="side-nav-item nav-item mobile-link" onClick={handleToggle}><Link to="/home">Home</Link></li>
                                 <li className="side-nav-item nav-item mobile-link" onClick={handleToggle}><Link to="/about">About</Link></li>
                                 <li className="side-nav-item nav-item mobile-link" onClick={handleToggle}><Link to="/contact">Contact</Link></li>
+                                <div className="mobile-link">
+                                    <Account/>
+                                </div>
                                 {/* <li className="side-nav-item nav-item">Our Model</li>
                                 <li className="side-nav-item nav-item">Services</li>
                                 <li className="side-nav-item nav-item">Applications</li> */}

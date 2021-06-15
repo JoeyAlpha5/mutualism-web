@@ -370,6 +370,19 @@ img.shape{
   border: none;
 }
 
+.apply-btn {
+  width: 91px;
+  height: 36px;
+  background: #46A16E;
+  font-size: 13px !important;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px !important;
+  cursor: pointer;
+}
+
 .contact-details{
   display: flex;
   flex-direction: row;
