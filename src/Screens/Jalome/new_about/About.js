@@ -215,8 +215,11 @@ const NewAbout = ()=>{
                                 for financing soon — so please join our newsletter to stay in the loop.
                             </p>
 
-                            <h2 style={{color: "#46A16E"}}>Sign up for our newsletter.</h2>
-                            {/* mailing list pop up */}
+                            {/* apply now button takes you to the application */}
+                            <button onClick={()=>window.open('https://app.mutualism.co.za/')} className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Apply now</button>
+
+                            {/* <h2 style={{color: "#46A16E"}}>Sign up for our newsletter.</h2>
+                            
                             <Popup className="home-modal form-modal-newsletter" id="subscribe-modal" onOpen={resetForm} trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Stay informed.</button>} modal>
                                 <div className="modal-Text">
                                     <p className="modal-text-heading" style={{fontWeight:'bold'}}>Join our mailing list:</p>
@@ -279,7 +282,7 @@ const NewAbout = ()=>{
                                         <br/>
                                     </form>
                                 </div>
-                            </Popup>
+                            </Popup> */}
                         </div>
                     </div>
                     <Space/>

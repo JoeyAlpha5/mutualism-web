@@ -21,12 +21,10 @@ function Main(props){
                     power to the small business owners of South Africa. 
                 </p>
                 
+                {/* apply now button takes you to the application */}
+                <button onClick={()=>window.open('https://app.mutualism.co.za/')} className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Apply now</button>
                 
-                <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal closeOnDocumentClick>
-                    {/* <div className="modal-heading">
-                        <p className="overlay-text">our model</p>
-                        <h4>A New Model.</h4>
-                    </div> */}
+                {/* <Popup className="home-modal" trigger={<button className="animate__animated animate__fadeInUp"><IoIosArrowRoundForward size={30} style={{marginRight:10}}/>Learn more</button>} modal closeOnDocumentClick>
 
                     <div className="modal-Text">
                     <p className="modal-text-heading">What We Do:</p>
@@ -66,7 +64,7 @@ function Main(props){
                             </p>
                     </div>
 
-                </Popup>
+                </Popup> */}
                 
                 <Space/>
                 <h1 className="home-heading">
